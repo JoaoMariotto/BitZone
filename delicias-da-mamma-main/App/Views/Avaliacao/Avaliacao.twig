@@ -1,0 +1,44 @@
+<main id="avaliacoesPage">
+    <section>
+        <img src="Midias/Imgs/Banner-avaliacoes.png" width="100%" height="650px"/>
+    </section>
+    <section class="infoAvaliacao">
+        <p>Reconheçemos a importância das avaliações dos clientes para o sucesso do negócio. As avaliações fornecem feedback valioso, ajudando a entender expectativas e áreas de melhoria. Elas influenciam diretamente a reputação do estabelecimento e atraem novos clientes. Além disso, permitem manter uma conexão com o público-alvo e são uma ferramenta de marketing poderosa, ampliando a visibilidade da pizzaria. Em resumo, as avaliações dos clientes são essenciais para melhorar, crescer e superar expectativas.
+        </p>
+    </section>
+    <section>
+        <form action="/enviarAvaliacao" method="POST" class="formAvaliacao">
+            <article>
+                <h2>Qual sua Avaliação Geral?</h2>
+            </article>
+            <article class="star">
+                <input name="stars" type="range" min="0" max="5" value="0" step="1" id="starRating" style="display: none">
+                <div id="starDisplay"><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+            </article>
+            <article>
+                <h2>Informe seu Nome</h2>
+            </article>
+            <article>
+                <input type="text" name="nome" placeholder="Informe seu Nome">
+            </article>
+            <article>
+                <h2>Descreva um pouco sobre sua experiencia</h2>
+            </article>
+            <article>
+                <textarea cols="100" rows="10" name="descricao"></textarea>
+            </article>
+            <article>
+                <input type="submit" value="Enviar Avaliação">
+            </article>
+            {% if url == '/avaliacao?sucesso' %}
+                <p class="avaliacaoRealizada">{{ 'Avaliação realizada com sucesso!' }}</p>
+            {% endif %}
+            {% if url == '//avaliacao?façaLogin' %}
+                <p class="avaliacaoNaoRealizada">{{ 'Faça login para deixar sua avaliação!' }}</p>
+            {% endif %}
+            {% if url == '/avaliacao?faltaDeComponentes' %}
+                <p class="avaliacaoNaoRealizada">{{ 'Verifique todas as informações!' }}</p>
+            {% endif %}
+        </form>
+    </section>
+</main>

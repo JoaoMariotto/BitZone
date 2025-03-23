@@ -1,0 +1,26 @@
+<footer class="d-flex justify-content-center" <?php if($_SESSION['usuario'] == 'adm' || $_SESSION['usuario'] == 'caixa' || $_SESSION['usuario'] == 'funcionario'){?> style="height: 100px; margin-top: 200px" <?php } ?>>
+<section class="d-flex align-items-center">
+        <section class="block">
+            <?php if($_SESSION['usuario'] != 'adm' && $_SESSION['usuario'] != 'caixa' && $_SESSION['usuario'] != 'funcionario'){?>
+            <article class="d-flex justify-content-center" style="gap: 50px;">
+                <a href="https://www.instagram.com/deliciasdamamma1/"  class="button" target="_blank">
+                   <div class="icon">
+                       <i class="fab fa-instagram"></i>
+                   </div>
+                   <span>Instagram</span>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100057071662233&mibextid=ZbWKwL" class="button" target="_blank">
+                   <div class="icon">
+                       <i class="fab fa-facebook-f"></i>
+                   </div>
+                   <span>Facebook</span>
+                </a>
+            </article>
+            <?php } ?>
+           <article class="info">
+               <p>&copy; 2024 Delícias da Mamma || Created by <a href=>CodeStar</a></p>
+           </article>
+        </section>
+    </section>
+</footer>
+</body>

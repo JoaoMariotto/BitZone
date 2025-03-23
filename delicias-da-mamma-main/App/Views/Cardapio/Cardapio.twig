@@ -1,0 +1,119 @@
+<main id="cardapio">
+    <a name="topo"/>
+    <section>
+        <img src="Midias/Imgs/Banner-cardapios.png" width="100%"/>
+    </section>
+    <section class="ajuda">
+      <h1>Clique em alguma das opções para ver o cardápio</h1>
+    </section>
+    <section class="navButtonCardapio">
+        <button class="btn-cardapio" id="btnPizzasCardapio">Pizzas</button>
+        <button class="btn-cardapio" id="btnBatatasCardapio">Batatas Recheadas</button>
+        <button class="btn-cardapio" id="btnLanchesCardapio">Lanches</button>
+        <button class="btn-cardapio" id="btnMassasCardapio">Panquecas</button>
+        <button class="btn-cardapio" id="btnPratosCardapio">Pratos</button>
+        <button class="btn-cardapio" id="btnAcrescimosCardapio">Acréscimos</button>
+        <button class="btn-cardapio" id="btnBordasCardapio">Bordas</button>
+        <button class="btn-cardapio" id="btnBebidasCardapio">Bebidas</button>
+    </section>
+    <section class="sessaoCardapio" id="pizzasContainer">
+        {% for pizzas in pizzas %}
+            <article class="sessaoItem">
+              <img class="imagemIcon" src="Midias/Imgs/Pizza-icon.png"/>
+              <section>
+                  <h1>{{ pizzas.nome }}</h1>
+                  <p>{{pizzas.descricao}}</p>
+                  <aside>
+                      <span>{{ pizzas.valorPequeno }}</span>/
+                      <span>{{ pizzas.valorGrande }}</span>
+                  </aside>
+              </section>
+            </article>
+        {% endfor %}
+    </section>
+    <section class="sessaoCardapio" id="batatasContainer">
+        {% for batatas in batatas %}
+            <article class="sessaoItem">
+              <img class="imagemIcon" src="Midias/Imgs/Batata-icon.png"/>
+              <section>
+                  <h1>{{ batatas.nome }}</h1>
+                  <aside>
+                      <span>{{ batatas.valorPequeno }}</span>/
+                      <span>{{ batatas.valorGrande }}</span>
+                  </aside>
+              </section>
+            </article>
+        {% endfor %}
+    </section>
+    <section class="sessaoCardapio" id="lanchesContainer">
+        {% for lanches in lanches %}
+            <article class="sessaoItem">
+            <img class="imagemIcon" src="Midias/Imgs/Lanches-icon.png"/>
+              <section>
+                  <h1>{{ lanches.nome }}</h1>
+                  <p>{{lanches.descricao}}</p>
+                  <aside><span>{{ lanches.valor }}</span></aside>
+              </section>
+            </article>
+        {% endfor %}
+    </section>
+    <section class="sessaoCardapio" id="massasContainer">
+        {% for massas in massas %}
+            <article class="sessaoItem">
+            <img class="imagemIcon" src="Midias/Imgs/Massas-icon.png"/>
+              <section>
+                  <h1>{{ massas.nome }}</h1>
+                  <aside><span>{{ massas.valor }}</span></aside>
+              </section>
+            </article>
+        {% endfor %}
+    </section>
+    <section class="sessaoCardapio" id="pratosContainer">
+        {% for pratos in pratos %}
+            <article class="sessaoItem">
+              <img class="imagemIcon" src="Midias/Imgs/Pratos-icon.png"/>
+              <section>
+                  <h1>{{ pratos.nome }}</h1>
+                  <p>{{pratos.descricao}}</p>
+                  <aside><span>{{ pratos.valor }}</span></aside>
+              </section>
+            </article>
+        {% endfor %}
+    </section>
+    <section class="sessaoCardapio" id="acrescimosContainer">
+        {% for acrescimos in acrescimos %}
+            <article class="sessaoItem">
+              <img class="imagemIcon" src="Midias/Imgs/acrescimos.png"/>
+              <section>
+                  <h1>{{ acrescimos.nome }}</h1>
+                  <aside><span>{{ acrescimos.valor }}</span></aside>
+              </section>
+            </article>
+        {% endfor %}
+    </section>
+    <section class="sessaoCardapio" id="bordasContainer">
+        {% for bordas in bordas %}
+            <article class="sessaoItem">
+              <img class="imagemIcon" src="Midias/Imgs/borda.png"/>
+              <section>
+                  <h1>{{ bordas.nome }}</h1>
+                  <aside><span>{{ bordas.valor }}</span></aside>
+              </section>
+            </article>
+        {% endfor %}
+    </section>
+    <section class="sessaoCardapio" id="bebidasContainer">
+        {% for bebidas in bebidas %}
+            <article class="sessaoItem">
+              <img class="imagemIcon" src="Midias/Imgs/Bebidas-icon.png"/>
+              <section>
+                  <h1>{{ bebidas.nome }}</h1>
+                  <aside><span>{{ bebidas.valor }}</span></aside>
+              </section>
+            </article>
+        {% endfor %}
+    </section>
+    <section class="voltarTopo">
+        <a href="#topo"><i class="fa-solid fa-arrow-up"></i></a>
+    </section>
+<main/>

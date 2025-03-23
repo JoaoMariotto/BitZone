@@ -1,0 +1,58 @@
+<main id="adm">
+    <section class="navAdm">
+          <ul>
+            <a href="/admMenu">
+                <li>Avaliações</li>
+            </a>
+            <hr>
+            <a href="/admPedidoLocal">
+                <li>Ver Pedidos/Local</li>
+            </a>
+            <hr>
+            <a href="/admPedidoDelivery">
+                <li>Ver Pedidos/Delivery</li>
+            </a>
+            <hr>
+            <a href="/admRegistroGeral">
+                <li>Registro Geral</li>
+            </a>
+          </ul>
+    </section>
+    <section class="conteudo">
+        <article>        
+            <h1>Avaliações</h1>
+        </article>
+        <article class="avaliacaoAdm">        
+            {% for avaliacao in avaliacoes %}
+            <section class="avaliacaoCard">
+                <article>
+                    <h4>{{avaliacao.nome}}</h4>
+                    <h5>{{avaliacao.data}}</h5>
+                </article>
+                <script>
+                    var stars = {{avaliacao.estrelas}};
+                    function preencherEstrelas() {
+                        var starAvaliacao = document.getElementById('starAvaliacao');
+                        starAvaliacao.innerHTML = ''; 
+
+                        for (var i = 0; i < stars; i++) {
+                            starAvaliacao.innerHTML += '<i class="fa-solid fa-star" style="color: #ff9100"></i>';
+                        }
+
+                        for (var i = stars; i < 5; i++) {
+                            starAvaliacao.innerHTML += '<i class="fa-regular fa-star" style="color: #ff9100"></i>';
+                        }
+                    }
+                    window.onload = preencherEstrelas;
+                </script>
+                <article>
+                    <div id="starAvaliacao"></div>
+                </article>
+                <article class="descricaoAvaliacao">
+                    <p>{{avaliacao.descricao}}</p> 
+                </article>
+            </section>
+            {% endfor %}
+        </article>
+    </section>
+</main>

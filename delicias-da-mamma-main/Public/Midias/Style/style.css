@@ -1,0 +1,2346 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background: url(../Imgs/fundo.png) repeat; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #ff9100; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #121618; }
+
+.mobileNav {
+  display: none; }
+
+header {
+  height: 90px;
+  width: 100%;
+  background-color: #121618;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  align-items: center;
+  position: fixed;
+  z-index: 3; }
+  header .btn-mobile {
+    border: none;
+    background: none;
+    color: #f2f2f2;
+    font-size: 25px; }
+  header .desktopNav {
+    display: block; }
+  header .mobileNavDisplay {
+    display: none; }
+  header .logo {
+    display: flex;
+    justify-content: center; }
+    header .logo img {
+      height: 70px; }
+  header nav {
+    height: 90px; }
+    header nav ul {
+      height: 90px;
+      display: flex;
+      justify-content: end; }
+      header nav ul a li {
+        color: #fff;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        padding: 0px 20px 0px 20px; }
+        header nav ul a li .deslogar {
+          padding-left: 5px; }
+
+.voltarTopo {
+  margin-top: 35px;
+  margin-bottom: -30px; }
+  .voltarTopo a {
+    background-color: #121618;
+    padding: 15px;
+    color: #ff9100; }
+    .voltarTopo a i {
+      font-size: 20px; }
+
+.voltarTopoAdm {
+  margin-top: 35px;
+  margin-bottom: -30px; }
+  .voltarTopoAdm a {
+    background-color: #121618;
+    border-radius: 15px;
+    padding: 15px;
+    color: #ff9100; }
+    .voltarTopoAdm a i {
+      font-size: 20px; }
+
+main {
+  padding-top: 90px;
+  width: 100%;
+  max-width: 100%; }
+
+main#loginPage {
+  display: flex;
+  justify-content: center; }
+  main#loginPage #loginForm {
+    margin: 15px;
+    background-color: #ff9100;
+    width: 500px;
+    height: 457px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px; }
+    main#loginPage #loginForm form {
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main#loginPage #loginForm form .erroLogin {
+        color: #121618;
+        font-weight: 700; }
+      main#loginPage #loginForm form .inputSubmit {
+        padding: 35px 0px 0px 0px; }
+      main#loginPage #loginForm form input[type="email"], main#loginPage #loginForm form input[type="password"] {
+        width: 368px;
+        height: 40px;
+        padding: 5px;
+        border: none; }
+      main#loginPage #loginForm form input[type="submit"] {
+        width: 200px;
+        height: 35px;
+        background-color: #f2f2f2;
+        color: #000;
+        border: none; }
+      main#loginPage #loginForm form .cadastrarLink {
+        margin-top: 5px; }
+        main#loginPage #loginForm form .cadastrarLink a {
+          color: #4267b2;
+          text-decoration: underline; }
+
+main#cadastroPage {
+  display: flex;
+  justify-content: center; }
+  main#cadastroPage #loginForm {
+    padding: 10px;
+    margin: 15px;
+    background-color: #ff9100;
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px; }
+    main#cadastroPage #loginForm form {
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main#cadastroPage #loginForm form .cadastroRealizado {
+        color: #121618;
+        font-weight: 700; }
+      main#cadastroPage #loginForm form .cadastroNaoEfetuado {
+        color: #121618;
+        font-weight: 700; }
+      main#cadastroPage #loginForm form .inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; }
+      main#cadastroPage #loginForm form .cadastrarLink {
+        margin-top: 5px; }
+        main#cadastroPage #loginForm form .cadastrarLink a {
+          color: #4267b2;
+          text-decoration: un; }
+    main#cadastroPage #loginForm form input[type="email"], main#cadastroPage #loginForm form input[type="password"], main#cadastroPage #loginForm input[type="text"] {
+      width: 368px;
+      height: 40px;
+      padding: 5px;
+      border: none; }
+    main#cadastroPage #loginForm form input[type="submit"] {
+      width: 200px;
+      height: 35px;
+      background-color: #f2f2f2;
+      color: #000;
+      border: none;
+      margin-top: 50px; }
+
+main#paginaInicial .banner {
+  display: flex; }
+  main#paginaInicial .banner .banner-img {
+    width: 100%; }
+  main#paginaInicial .banner .button-group {
+    position: absolute;
+    right: 70px;
+    bottom: 250px; }
+  main#paginaInicial .banner button {
+    margin-right: 10px;
+    width: auto;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    background-color: #ff9100;
+    color: #000; }
+main#paginaInicial .info-noticias {
+  width: 100%;
+  height: 116px;
+  background-color: #121618;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  gap: 150px; }
+  main#paginaInicial .info-noticias i {
+    color: #ff9100;
+    font-size: 58px; }
+  main#paginaInicial .info-noticias article {
+    width: 500px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center; }
+    main#paginaInicial .info-noticias article p {
+      max-width: 500px;
+      text-align: center; }
+main#paginaInicial .sobre-cardapio {
+  margin: 45px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  main#paginaInicial .sobre-cardapio .descricao-cardapio {
+    max-width: 700px;
+    text-align: center;
+    margin: 15px 0px; }
+    main#paginaInicial .sobre-cardapio .descricao-cardapio h2 {
+      font-weight: 600; }
+    main#paginaInicial .sobre-cardapio .descricao-cardapio p {
+      font-weight: 400;
+      font-size: 20px; }
+  main#paginaInicial .sobre-cardapio .imagens-cardapio {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    padding: 15px; }
+  main#paginaInicial .sobre-cardapio button {
+    margin-right: 10px;
+    width: auto;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    background-color: #ff9100;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500; }
+main#paginaInicial .sobre-delivery {
+  margin-bottom: -100px;
+  background-color: #121618;
+  padding: 20px;
+  color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  main#paginaInicial .sobre-delivery .descricao-delivery {
+    max-width: 700px;
+    text-align: center;
+    margin: 15px 0px; }
+  main#paginaInicial .sobre-delivery .sessao-info-delivery {
+    display: flex;
+    flex-direction: row;
+    gap: 100px; }
+    main#paginaInicial .sobre-delivery .sessao-info-delivery .info-delivery {
+      width: 300px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main#paginaInicial .sobre-delivery .sessao-info-delivery .info-delivery .button-delivery {
+        background-color: #ff9100;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        margin-bottom: 10px; }
+        main#paginaInicial .sobre-delivery .sessao-info-delivery .info-delivery .button-delivery i {
+          font-size: 45px;
+          color: #f2f2f2; }
+
+main#cardapio .ajuda {
+  margin-top: 25px;
+  text-align: center; }
+  main#cardapio .ajuda h1 {
+    font-size: 24px; }
+main#cardapio .navButtonCardapio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  main#cardapio .navButtonCardapio .btn-cardapio {
+    margin: 0px 30px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #121618;
+    color: #fff;
+    font-size: 18px; }
+main#cardapio .imagemIcon {
+  width: 200px;
+  height: 200px; }
+main#cardapio .voltarTopo {
+  margin-top: 35px;
+  margin-bottom: -30px; }
+  main#cardapio .voltarTopo a {
+    background-color: #121618;
+    padding: 15px;
+    color: #ff9100; }
+    main#cardapio .voltarTopo a i {
+      font-size: 20px; }
+main#cardapio .sessaoCardapio {
+  margin-top: 10px;
+  width: 100%;
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px; }
+  main#cardapio .sessaoCardapio .sessaoItem {
+    width: 300px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #121618;
+    border-radius: 15px;
+    justify-content: end; }
+    main#cardapio .sessaoCardapio .sessaoItem section {
+      background-color: #ff9100;
+      width: 100%;
+      border-radius: 0px 15px;
+      padding: 10px; }
+      main#cardapio .sessaoCardapio .sessaoItem section h1 {
+        font-size: 26px;
+        font-weight: 800; }
+      main#cardapio .sessaoCardapio .sessaoItem section aside {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        font-weight: 700; }
+
+main#avaliacoesPage .infoAvaliacao {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 25px; }
+  main#avaliacoesPage .infoAvaliacao p {
+    max-width: 1000px;
+    font-size: 22px;
+    text-align: justify; }
+main#avaliacoesPage .avaliacaoRealizada {
+  color: #121618;
+  font-weight: 700; }
+main#avaliacoesPage .avaliacaoNaoRealizada {
+  color: #ff9100;
+  font-weight: 700; }
+main#avaliacoesPage .formAvaliacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  main#avaliacoesPage .formAvaliacao .star #starDisplay {
+    font-size: 24px;
+    color: #ff9100; }
+  main#avaliacoesPage .formAvaliacao .star #starDisplay i {
+    margin: 0 5px;
+    cursor: pointer; }
+  main#avaliacoesPage .formAvaliacao textarea {
+    border-radius: 5px;
+    padding: 10px; }
+  main#avaliacoesPage .formAvaliacao input[type="text"] {
+    width: 368px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #121618; }
+  main#avaliacoesPage .formAvaliacao input[type="submit"] {
+    padding: 10px;
+    background-color: #ff9100;
+    border: none;
+    font-size: 22px; }
+
+main#delivery {
+  display: flex;
+  flex-direction: row;
+  gap: 50px; }
+  main#delivery .deliveryEscolha {
+    padding: 25px;
+    width: 1500px; }
+    main#delivery .deliveryEscolha .buttonsDelivery {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px; }
+      main#delivery .deliveryEscolha .buttonsDelivery .btn-delivery {
+        width: 150px;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        background-color: #121618;
+        color: #f2f2f2; }
+    main#delivery .deliveryEscolha .sessaoDelivery {
+      margin-top: 10px;
+      width: 100%;
+      display: none;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 20px; }
+      main#delivery .deliveryEscolha .sessaoDelivery .sessaoItem {
+        width: 250px;
+        max-width: 250px;
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #121618;
+        border-radius: 15px;
+        justify-content: end; }
+        main#delivery .deliveryEscolha .sessaoDelivery .sessaoItem .btn-plus {
+          background: #00000000;
+          border: none;
+          width: 20px; }
+          main#delivery .deliveryEscolha .sessaoDelivery .sessaoItem .btn-plus i {
+            background: #00000000;
+            font-size: 20px;
+            font-weight: 800; }
+        main#delivery .deliveryEscolha .sessaoDelivery .sessaoItem img {
+          width: 200px; }
+        main#delivery .deliveryEscolha .sessaoDelivery .sessaoItem section {
+          background-color: #ff9100;
+          width: 100%;
+          border-radius: 0px 15px;
+          padding: 10px; }
+          main#delivery .deliveryEscolha .sessaoDelivery .sessaoItem section h1 {
+            font-size: 26px;
+            font-weight: 800; }
+          main#delivery .deliveryEscolha .sessaoDelivery .sessaoItem section p {
+            max-width: 100%; }
+          main#delivery .deliveryEscolha .sessaoDelivery .sessaoItem section aside {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            font-weight: 700; }
+  main#delivery .infoDelivery {
+    padding: 25px;
+    width: 500px; }
+    main#delivery .infoDelivery .sessaoPedido {
+      width: 450px;
+      background-color: #ff9100;
+      border-radius: 10px;
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      font-size: 17px;
+      margin-bottom: 25px; }
+      main#delivery .infoDelivery .sessaoPedido #pedidoMeia {
+        width: 100%; }
+      main#delivery .infoDelivery .sessaoPedido #pedido {
+        width: 100%; }
+      main#delivery .infoDelivery .sessaoPedido .itemPedido {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+        main#delivery .infoDelivery .sessaoPedido .itemPedido .btn-remove {
+          background: #00000000;
+          border: none; }
+          main#delivery .infoDelivery .sessaoPedido .itemPedido .btn-remove i {
+            background: #00000000;
+            border: none; }
+    main#delivery .infoDelivery .sessaoDados {
+      width: 450px;
+      background-color: #ff9100;
+      border-radius: 10px;
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      font-size: 17px; }
+      main#delivery .infoDelivery .sessaoDados input {
+        width: 400px;
+        padding: 5px;
+        border-radius: 5px;
+        border: none; }
+      main#delivery .infoDelivery .sessaoDados select {
+        width: 400px;
+        padding: 5px;
+        border-radius: 5px;
+        border: none; }
+      main#delivery .infoDelivery .sessaoDados .submitButton {
+        width: 400px;
+        margin: 10px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+        main#delivery .infoDelivery .sessaoDados .submitButton input {
+          width: 150px;
+          color: #000;
+          font-weight: 500;
+          background-color: #f2f2f2; }
+
+main#adm {
+  display: flex;
+  flex-direction: row; }
+  main#adm .avaliacaoAdm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px; }
+    main#adm .avaliacaoAdm .avaliacaoCard {
+      padding: 20px;
+      width: 300px;
+      height: 300px;
+      background-color: #fff;
+      border: 1px solid #121618; }
+      main#adm .avaliacaoAdm .avaliacaoCard .descricaoAvaliacao {
+        margin-top: 5px;
+        padding: 10px;
+        border: 1px solid #121618; }
+  main#adm .conteudo {
+    margin-left: 250px;
+    padding: 20px;
+    margin-bottom: 500px; }
+  main#adm .navAdm {
+    position: fixed;
+    height: 100vh;
+    width: 250px;
+    background-color: #1D2A31;
+    padding: 15px 0px; }
+    main#adm .navAdm ul {
+      margin-left: -30px; }
+      main#adm .navAdm ul a {
+        text-align: center;
+        color: #fff;
+        font-size: 1.2rem; }
+      main#adm .navAdm ul hr {
+        color: #fff;
+        border: 1px solid #fff; }
+
+.table {
+  width: 100%; }
+  .table table {
+    border-collapse: collapse;
+    border: 2px solid black;
+    font-family: sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px; }
+  .table caption {
+    caption-side: bottom;
+    padding: 10px;
+    width: 500px;
+    font-weight: bold; }
+  .table thead, .table th, .table td {
+    border: 1px solid black;
+    padding: 8px 10px;
+    width: 220px;
+    max-width: 220px;
+    text-align: center; }
+  .table td:last-of-type {
+    text-align: center; }
+  .table tfoot th {
+    text-align: right; }
+  .table tfoot td {
+    font-weight: bold; }
+
+main #delivery {
+  display: flex;
+  flex-direction: row;
+  gap: 50px; }
+  main #delivery .deliveryEscolha {
+    padding: 25px;
+    width: 1000px; }
+    main #delivery .deliveryEscolha .buttonsDelivery {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px; }
+      main #delivery .deliveryEscolha .buttonsDelivery .btn-delivery {
+        width: 150px;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        background-color: #121618;
+        color: #f2f2f2; }
+    main #delivery .deliveryEscolha .sessaoDelivery {
+      margin-top: 10px;
+      width: 100%;
+      display: none;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 20px; }
+      main #delivery .deliveryEscolha .sessaoDelivery .sessaoItem {
+        width: 250px;
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #121618;
+        border-radius: 15px;
+        justify-content: end; }
+        main #delivery .deliveryEscolha .sessaoDelivery .sessaoItem .btn-plus {
+          background: #00000000;
+          border: none;
+          width: 20px;
+          height: 20px; }
+          main #delivery .deliveryEscolha .sessaoDelivery .sessaoItem .btn-plus i {
+            background: #00000000;
+            font-size: 20px;
+            font-weight: 800; }
+        main #delivery .deliveryEscolha .sessaoDelivery .sessaoItem img {
+          width: 200px; }
+        main #delivery .deliveryEscolha .sessaoDelivery .sessaoItem section {
+          background-color: #ff9100;
+          width: 100%;
+          border-radius: 0px 15px;
+          padding: 10px; }
+          main #delivery .deliveryEscolha .sessaoDelivery .sessaoItem section h1 {
+            font-size: 26px;
+            font-weight: 800; }
+          main #delivery .deliveryEscolha .sessaoDelivery .sessaoItem section aside {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            font-weight: 700; }
+  main #delivery .infoDelivery {
+    padding: 25px;
+    width: 500px; }
+    main #delivery .infoDelivery .sessaoPedido {
+      width: 450px;
+      background-color: #ff9100;
+      border-radius: 10px;
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      font-size: 17px;
+      margin-bottom: 25px; }
+      main #delivery .infoDelivery .sessaoPedido #pedidoMeia {
+        width: 400px; }
+      main #delivery .infoDelivery .sessaoPedido #pedido {
+        width: 400px; }
+      main #delivery .infoDelivery .sessaoPedido .itemPedido {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+        main #delivery .infoDelivery .sessaoPedido .itemPedido .btn-remove {
+          background: #00000000;
+          border: none; }
+          main #delivery .infoDelivery .sessaoPedido .itemPedido .btn-remove i {
+            background: #00000000;
+            border: none; }
+    main #delivery .infoDelivery .sessaoDados {
+      width: 450px;
+      background-color: #ff9100;
+      border-radius: 10px;
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      font-size: 17px; }
+      main #delivery .infoDelivery .sessaoDados input {
+        width: 400px;
+        padding: 5px;
+        border-radius: 5px;
+        border: none; }
+      main #delivery .infoDelivery .sessaoDados select {
+        width: 400px;
+        padding: 5px;
+        border-radius: 5px;
+        border: none; }
+      main #delivery .infoDelivery .sessaoDados .submitButton {
+        width: 400px;
+        margin: 10px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+        main #delivery .infoDelivery .sessaoDados .submitButton input {
+          width: 150px;
+          color: #000;
+          font-weight: 500;
+          background-color: #f2f2f2; }
+
+#naoEncontrado {
+  font-family: 'Righteous';
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #naoEncontrado .center-body {
+    width: 65%;
+    height: 70%;
+    background-color: #121618;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s linear;
+    border-radius: 25px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.2); }
+    #naoEncontrado .center-body h1 {
+      font-family: 'Space Mono';
+      font-size: 200px;
+      color: #F28705;
+      letter-spacing: 25px;
+      font-weight: 700;
+      text-shadow: 10px 9px 3px #F28705;
+      transition: all 1s linear; }
+    #naoEncontrado .center-body h2 {
+      color: #FBF8F3;
+      font-size: 26px;
+      font-weight: 700;
+      text-transform: uppercase; }
+    #naoEncontrado .center-body p {
+      color: #FBF8F3;
+      font-weight: 400;
+      text-align: center;
+      margin: 10px auto;
+      padding: 15px 30px;
+      transition: all 0.5s linear; }
+    #naoEncontrado .center-body a {
+      font-size: 14px;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      color: #FBF8F3;
+      padding: 15px 30px;
+      border-radius: 40px;
+      transition: all 0.5s ease-in; }
+  #naoEncontrado .center-body:hover h1 {
+    text-shadow: 9px 6px 3px #ffb65d; }
+
+/********
+footer*/
+footer {
+  position: relative;
+  margin-top: 100px;
+  z-index: 1;
+  width: 100%;
+  height: 300px;
+  background-color: #121618;
+  color: #fff;
+  font-family: Geizer; }
+
+footer .button {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  color: #000;
+  background: #ff9100;
+  overflow: hidden;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); }
+
+footer .button span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px; }
+
+footer .button:hover {
+  width: 200px;
+  color: #ff9100;
+  background: #121618; }
+
+footer .button:nth-child(1):hover .icon {
+  background: #e1306c; }
+
+footer .button:nth-child(2):hover .icon {
+  background: #4267b2; }
+
+footer .button:nth-child(3):hover .icon {
+  background: #1da1f2; }
+
+footer .button:nth-child(1) span {
+  color: #e1306c;
+  font-weight: 800; }
+
+footer .button:nth-child(2) span {
+  color: #4267b2;
+  font-weight: 800; }
+
+footer .button:nth-child(3) span {
+  color: #1da1f2;
+  font-weight: 800; }
+
+footer .button .icon {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  border-radius: 50px;
+  display: inline-block;
+  margin-left: -1px;
+  transition: all 0.3s ease-in-out; }
+
+footer .button .icon i {
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-in-out; }
+
+footer .button:hover i {
+  color: #fff; }
+
+footer footer:has(p) {
+  padding: 3px;
+  display: block;
+  text-align: center; }
+
+footer p:first-child a {
+  color: #ff9100;
+  text-decoration: underline; }
+
+footer footer a:hover {
+  color: #fafaff; }
+
+footer .clear {
+  clear: both; }
+
+/**********
+Print*/
+.btn-print {
+  border: none;
+  background: none; }
+  .btn-print i {
+    font-size: 20px; }
+
+.button-imprimir-space {
+  margin-top: 10px;
+  margin-bottom: 15px; }
+
+@media print {
+  .off-print {
+    display: none; }
+
+  .on-print {
+    display: block; }
+
+  .conteudo-print {
+    margin-top: -90px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: start !important; }
+
+  .display-print {
+    display: flex;
+    flex-direction: column; }
+
+  main#adm .conteudo {
+    margin-left: 0px; }
+
+  .no-break {
+    page-break-inside: avoid; } }
+@media screen and (max-width: 1370px) {
+  main#paginaInicial .banner {
+    display: flex;
+    justify-content: center; }
+    main#paginaInicial .banner .banner-img {
+      width: 100%; }
+    main#paginaInicial .banner .button-group {
+      position: absolute;
+      right: 20px;
+      bottom: 500px; }
+    main#paginaInicial .banner button {
+      margin-right: 20px;
+      width: auto;
+      padding: 15px;
+      border-radius: 7px;
+      border: none;
+      background-color: #ff9100;
+      color: #000;
+      font-size: 18px; }
+  main#paginaInicial .img-pageInicial {
+    width: 400px; }
+  main#paginaInicial .info-noticias {
+    width: 100%;
+    height: 140px;
+    background-color: #121618;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    padding: 20px;
+    font-size: 16px; }
+    main#paginaInicial .info-noticias img {
+      display: none; }
+    main#paginaInicial .info-noticias i {
+      color: #ff9100;
+      font-size: 68px; }
+    main#paginaInicial .info-noticias article {
+      width: 600px;
+      margin-left: 50px;
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+      align-items: center; }
+      main#paginaInicial .info-noticias article p {
+        max-width: 600px;
+        text-align: center; }
+  main#paginaInicial .sobre-cardapio {
+    margin: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main#paginaInicial .sobre-cardapio .descricao-cardapio {
+      max-width: 800px;
+      text-align: center;
+      margin: 20px 0; }
+      main#paginaInicial .sobre-cardapio .descricao-cardapio h2 {
+        font-weight: 600; }
+      main#paginaInicial .sobre-cardapio .descricao-cardapio p {
+        font-weight: 400;
+        font-size: 22px; }
+    main#paginaInicial .sobre-cardapio .imagens-cardapio {
+      display: flex;
+      flex-direction: row;
+      gap: 80px;
+      padding: 20px; }
+    main#paginaInicial .sobre-cardapio button {
+      margin-right: 20px;
+      width: auto;
+      padding: 15px;
+      border-radius: 7px;
+      border: none;
+      background-color: #ff9100;
+      color: #000;
+      font-size: 22px;
+      font-weight: 500; }
+  main#paginaInicial .sobre-delivery {
+    background-color: #121618;
+    padding: 30px;
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main#paginaInicial .sobre-delivery .descricao-delivery {
+      max-width: 800px;
+      text-align: center;
+      margin: 20px 0; }
+    main#paginaInicial .sobre-delivery .sessao-info-delivery {
+      display: flex;
+      flex-direction: row;
+      gap: 120px; }
+      main#paginaInicial .sobre-delivery .sessao-info-delivery .info-delivery {
+        width: 350px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        main#paginaInicial .sobre-delivery .sessao-info-delivery .info-delivery .button-delivery {
+          background-color: #ff9100;
+          width: 120px;
+          height: 120px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px;
+          margin-bottom: 15px; }
+          main#paginaInicial .sobre-delivery .sessao-info-delivery .info-delivery .button-delivery i {
+            font-size: 50px; }
+  main#paginaInicial .sobreNos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0; }
+
+  main#cardapio .ajuda {
+    margin-top: 30px;
+    text-align: center; }
+    main#cardapio .ajuda h1 {
+      font-size: 28px; }
+  main#cardapio .navButtonCardapio {
+    justify-content: space-around; }
+    main#cardapio .navButtonCardapio .btn-cardapio {
+      width: 180px;
+      margin: 0;
+      padding: 12px;
+      font-size: 20px; }
+  main#cardapio .imagemIcon {
+    width: 220px;
+    height: 220px; }
+  main#cardapio .voltarTopo {
+    margin-top: 40px;
+    margin-bottom: -40px; }
+    main#cardapio .voltarTopo a {
+      padding: 20px;
+      font-size: 24px; }
+      main#cardapio .voltarTopo a i {
+        font-size: 24px; }
+  main#cardapio .sessaoCardapio {
+    margin-top: 20px;
+    justify-content: space-around;
+    margin-bottom: 30px; }
+    main#cardapio .sessaoCardapio .sessaoItem {
+      width: 250px;
+      margin: 20px; }
+      main#cardapio .sessaoCardapio .sessaoItem section {
+        padding: 15px; }
+        main#cardapio .sessaoCardapio .sessaoItem section h1 {
+          font-size: 28px; }
+        main#cardapio .sessaoCardapio .sessaoItem section aside {
+          gap: 15px; }
+
+  main#delivery {
+    gap: 20px; }
+    main#delivery .deliveryEscolha .sessaoDelivery .sessaoItem {
+      width: 220px;
+      margin: 10px; }
+      main#delivery .deliveryEscolha .sessaoDelivery .sessaoItem .btn-plus {
+        width: 10px;
+        height: 10px; }
+      main#delivery .deliveryEscolha .sessaoDelivery .sessaoItem img {
+        width: 180px; } }
+@media screen and (max-width: 1098px) {
+  main#paginaInicial .banner {
+    display: flex;
+    justify-content: center; }
+    main#paginaInicial .banner .banner-img {
+      width: 100%; }
+    main#paginaInicial .banner .button-group {
+      position: absolute;
+      right: 40px;
+      bottom: 555px; }
+    main#paginaInicial .banner button {
+      margin-right: 10px;
+      width: auto;
+      padding: 10px;
+      border-radius: 7px;
+      border: none;
+      background-color: #ff9100;
+      color: #000;
+      font-size: 18px; }
+  main#paginaInicial .info-noticias {
+    width: 100%;
+    height: 116px;
+    background-color: #121618;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    padding: 20px; }
+    main#paginaInicial .info-noticias img {
+      display: none; }
+    main#paginaInicial .info-noticias i {
+      color: #ff9100;
+      font-size: 48px; }
+    main#paginaInicial .info-noticias article {
+      width: 400px;
+      margin-left: 30px;
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      align-items: center; }
+      main#paginaInicial .info-noticias article p {
+        max-width: 400px;
+        text-align: center; }
+  main#paginaInicial .sobre-cardapio {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main#paginaInicial .sobre-cardapio .descricao-cardapio {
+      max-width: 600px;
+      text-align: center;
+      margin: 15px 0; }
+      main#paginaInicial .sobre-cardapio .descricao-cardapio h2 {
+        font-weight: 600; }
+      main#paginaInicial .sobre-cardapio .descricao-cardapio p {
+        font-weight: 400;
+        font-size: 18px; }
+    main#paginaInicial .sobre-cardapio .imagens-cardapio {
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+      padding: 15px; }
+    main#paginaInicial .sobre-cardapio button {
+      margin-right: 10px;
+      width: auto;
+      padding: 10px;
+      border-radius: 7px;
+      border: none;
+      background-color: #ff9100;
+      color: #000;
+      font-size: 18px;
+      font-weight: 500; }
+  main#paginaInicial .sobre-delivery {
+    background-color: #121618;
+    padding: 20px;
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main#paginaInicial .sobre-delivery .descricao-delivery {
+      max-width: 600px;
+      text-align: center;
+      margin: 15px 0; }
+    main#paginaInicial .sobre-delivery .sessao-info-delivery {
+      display: flex;
+      flex-direction: row;
+      gap: 80px; }
+      main#paginaInicial .sobre-delivery .sessao-info-delivery .info-delivery {
+        width: 280px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        main#paginaInicial .sobre-delivery .sessao-info-delivery .info-delivery .button-delivery {
+          background-color: #ff9100;
+          width: 100px;
+          height: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px;
+          margin-bottom: 10px; }
+          main#paginaInicial .sobre-delivery .sessao-info-delivery .info-delivery .button-delivery i {
+            font-size: 40px; }
+  main#paginaInicial .sobreNos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0; }
+
+  main#cardapio .ajuda {
+    margin-top: 30px;
+    text-align: center; }
+    main#cardapio .ajuda h1 {
+      font-size: 28px; }
+  main#cardapio .navButtonCardapio {
+    justify-content: space-around; }
+    main#cardapio .navButtonCardapio .btn-cardapio {
+      width: 180px;
+      margin: 0;
+      padding: 12px;
+      font-size: 20px; }
+  main#cardapio .imagemIcon {
+    width: 220px;
+    height: 220px; }
+  main#cardapio .voltarTopo {
+    margin-top: 40px;
+    margin-bottom: -40px; }
+    main#cardapio .voltarTopo a {
+      padding: 20px;
+      font-size: 24px; }
+      main#cardapio .voltarTopo a i {
+        font-size: 24px; }
+  main#cardapio .sessaoCardapio {
+    margin-top: 20px;
+    justify-content: space-around;
+    margin-bottom: 30px; }
+    main#cardapio .sessaoCardapio .sessaoItem {
+      width: 250px;
+      margin: 20px; }
+      main#cardapio .sessaoCardapio .sessaoItem section {
+        padding: 15px; }
+        main#cardapio .sessaoCardapio .sessaoItem section h1 {
+          font-size: 28px; }
+        main#cardapio .sessaoCardapio .sessaoItem section aside {
+          gap: 15px; } }
+@media screen and (max-width: 430px) {
+  .off-mobile {
+    display: none; }
+
+  header {
+    grid-template-columns: 11fr 1fr; }
+
+  header .desktopNav {
+    display: none; }
+
+  header .mobileNavDisplay {
+    display: block;
+    z-index: 8; }
+
+  nav {
+    right: 0;
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 200px;
+    background-color: #121618;
+    z-index: 2; }
+
+  nav ul {
+    margin-top: 90px;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column; }
+
+  nav ul a li {
+    color: #fff;
+    height: 70px;
+    display: flex;
+    align-items: flex-end; }
+
+  nav ul a li .deslogar {
+    padding-left: 5px; }
+
+  main#paginaInicial .banner {
+    display: flex;
+    /* Altere de 'none' para 'flex' */
+    flex-direction: column;
+    align-items: center;
+    position: relative; }
+
+  main#paginaInicial .img-pageInicial {
+    width: 250px; }
+
+  main#paginaInicial .banner .banner-img {
+    width: 100%; }
+
+  main#paginaInicial .banner .button-group {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  main#paginaInicial .banner button {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: auto;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    background-color: #ff9100;
+    color: #000;
+    font-size: 14px; }
+
+  main#paginaInicial .info-noticias {
+    width: 100%;
+    height: auto;
+    background-color: #121618;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px; }
+
+  main#paginaInicial .info-noticias img {
+    display: none; }
+
+  main#paginaInicial .info-noticias i {
+    font-size: 36px; }
+
+  main#paginaInicial .info-noticias article {
+    width: 300px;
+    margin-left: 0;
+    text-align: center; }
+
+  main#paginaInicial .info-noticias article p {
+    max-width: 100%; }
+
+  main#paginaInicial .sobre-cardapio {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  main#paginaInicial .sobre-cardapio .descricao-cardapio {
+    max-width: 340px;
+    text-align: center;
+    margin: 10px 0; }
+
+  main#paginaInicial .sobre-cardapio .descricao-cardapio h2 {
+    font-weight: 600; }
+
+  main#paginaInicial .sobre-cardapio .descricao-cardapio p {
+    font-weight: 400;
+    font-size: 16px; }
+
+  main#paginaInicial .sobre-cardapio .imagens-cardapio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px; }
+
+  main#paginaInicial .sobre-cardapio button {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: auto;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    background-color: #ff9100;
+    color: #000;
+    font-size: 14px; }
+
+  main#paginaInicial .sobre-delivery {
+    background-color: #121618;
+    padding: 10px;
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  main#paginaInicial .sobre-delivery .descricao-delivery {
+    max-width: 340px;
+    text-align: center;
+    margin: 10px 0; }
+
+  main#paginaInicial .sobre-delivery .sessao-info-delivery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; }
+
+  main#paginaInicial .sobre-delivery .sessao-info-delivery .info-delivery {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  main#paginaInicial .sobre-delivery .sessao-info-delivery .info-delivery .button-delivery {
+    background-color: #ff9100;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px; }
+
+  main#paginaInicial .sobre-delivery .sessao-info-delivery .info-delivery .button-delivery i {
+    font-size: 24px; }
+
+  main#paginaInicial .sobreNos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0; }
+
+  main#cardapio .ajuda {
+    margin-top: 20px;
+    text-align: center; }
+
+  main#cardapio .ajuda h1 {
+    font-size: 22px; }
+
+  main#cardapio .navButtonCardapio {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  main#cardapio .navButtonCardapio .btn-cardapio {
+    margin: 10px 0;
+    width: 80%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: #121618;
+    color: #fff;
+    font-size: 16px; }
+
+  main#cardapio .imagemIcon {
+    width: 150px;
+    height: 150px; }
+
+  main#cardapio .voltarTopo {
+    margin-top: 20px;
+    margin-bottom: -20px; }
+
+  main#cardapio .voltarTopo a {
+    background-color: #121618;
+    padding: 10px;
+    color: #ff9100; }
+
+  main#cardapio .voltarTopo a i {
+    font-size: 18px; }
+
+  main#cardapio .sessaoCardapio {
+    margin-top: 10px;
+    padding: 20px;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 20px; }
+
+  main#cardapio .sessaoCardapio .sessaoItem {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #121618;
+    border-radius: 15px;
+    justify-content: end; }
+
+  main#cardapio .sessaoCardapio .sessaoItem section {
+    background-color: #ff9100;
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+    padding: 8px; }
+
+  main#cardapio .sessaoCardapio .sessaoItem section h1 {
+    font-size: 20px;
+    font-weight: 800; }
+
+  main#cardapio .sessaoCardapio .sessaoItem section aside {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 5px;
+    font-weight: 700; }
+
+  main#delivery {
+    flex-direction: column;
+    gap: 20px; }
+
+  main#delivery .deliveryEscolha {
+    width: 100%;
+    padding: 15px; }
+
+  main#delivery .deliveryEscolha .buttonsDelivery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px; }
+
+  main#delivery .deliveryEscolha .buttonsDelivery .btn-delivery {
+    width: 49%;
+    min-width: 150px;
+    height: 40px; }
+
+  main#delivery .deliveryEscolha .sessaoDelivery .sessaoItem {
+    width: 47%;
+    margin: 5px; }
+
+  main#delivery .deliveryEscolha .sessaoDelivery .sessaoItem .btn-plus i {
+    font-size: 15px; }
+
+  main#delivery .deliveryEscolha .sessaoDelivery .sessaoItem section p {
+    font-size: 12px; }
+
+  main#delivery .infoDelivery {
+    width: 100%;
+    padding: 10px; }
+
+  main#delivery .infoDelivery .sessaoPedido,
+  main#delivery .infoDelivery .sessaoDados {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    display: block; }
+
+  main#delivery .infoDelivery .sessaoPedido input,
+  main#delivery .infoDelivery .sessaoPedido select,
+  main#delivery .infoDelivery .sessaoDados input,
+  main#delivery .infoDelivery .sessaoDados select {
+    width: 100%; }
+
+  main#delivery .infoDelivery .sessaoPedido .submitButton,
+  main#delivery .infoDelivery .sessaoDados .submitButton {
+    width: 100%; }
+
+  main#delivery .infoDelivery .sessaoPedido .submitButton input,
+  main#delivery .infoDelivery .sessaoDados .submitButton input {
+    width: 100%; }
+
+  main#delivery .deliveryEscolha .sessaoDelivery .sessaoItem section aside {
+    display: flex;
+    flex-direction: column; }
+
+  main#delivery .deliveryEscolha .sessaoDelivery .sessaoItem img {
+    width: 160px; }
+
+  main#delivery .deliveryEscolha .sessaoDelivery .sessaoItem section aside {
+    font-size: 16px; } }
+@media screen and (max-width: 390px) {
+  main#paginaInicial .banner .banner-img {
+    width: 100%; }
+  main#paginaInicial .banner .button-group {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  main#paginaInicial .banner button {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: auto;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    background-color: #ff9100;
+    color: #000;
+    font-size: 14px; }
+  main#paginaInicial .info-noticias {
+    width: 100%;
+    height: auto;
+    background-color: #121618;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px; }
+    main#paginaInicial .info-noticias img {
+      display: none; }
+    main#paginaInicial .info-noticias i {
+      font-size: 36px; }
+    main#paginaInicial .info-noticias article {
+      width: 200px;
+      margin-left: 0;
+      text-align: center; }
+      main#paginaInicial .info-noticias article p {
+        max-width: 100%; }
+  main#paginaInicial .sobre-cardapio {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main#paginaInicial .sobre-cardapio .descricao-cardapio {
+      max-width: 340px;
+      text-align: center;
+      margin: 10px 0; }
+      main#paginaInicial .sobre-cardapio .descricao-cardapio h2 {
+        font-weight: 600; }
+      main#paginaInicial .sobre-cardapio .descricao-cardapio p {
+        font-weight: 400;
+        font-size: 16px; }
+    main#paginaInicial .sobre-cardapio .imagens-cardapio {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 10px; }
+    main#paginaInicial .sobre-cardapio button {
+      margin-right: 0;
+      margin-bottom: 10px;
+      width: auto;
+      padding: 10px;
+      border-radius: 7px;
+      border: none;
+      background-color: #ff9100;
+      color: #000;
+      font-size: 14px; }
+  main#paginaInicial .sobre-delivery {
+    background-color: #121618;
+    padding: 10px;
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main#paginaInicial .sobre-delivery .descricao-delivery {
+      max-width: 340px;
+      text-align: center;
+      margin: 10px 0; }
+    main#paginaInicial .sobre-delivery .sessao-info-delivery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px; }
+      main#paginaInicial .sobre-delivery .sessao-info-delivery .info-delivery {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        main#paginaInicial .sobre-delivery .sessao-info-delivery .info-delivery .button-delivery {
+          background-color: #ff9100;
+          width: 60px;
+          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px; }
+          main#paginaInicial .sobre-delivery .sessao-info-delivery .info-delivery .button-delivery i {
+            font-size: 24px; }
+  main#paginaInicial .sobreNos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0; }
+
+  main#cardapio .ajuda {
+    margin-top: 20px;
+    text-align: center; }
+    main#cardapio .ajuda h1 {
+      font-size: 22px; }
+  main#cardapio .navButtonCardapio {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main#cardapio .navButtonCardapio .btn-cardapio {
+      margin: 10px 0;
+      width: 180px;
+      padding: 8px;
+      border-radius: 5px;
+      border: none;
+      background-color: #121618;
+      color: #fff;
+      font-size: 16px; }
+  main#cardapio .imagemIcon {
+    width: 150px;
+    height: 150px; }
+  main#cardapio .voltarTopo {
+    margin-top: 20px;
+    margin-bottom: -20px; }
+    main#cardapio .voltarTopo a {
+      background-color: #121618;
+      padding: 10px;
+      color: #ff9100; }
+      main#cardapio .voltarTopo a i {
+        font-size: 18px; }
+  main#cardapio .sessaoCardapio {
+    margin-top: 10px;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 20px; }
+    main#cardapio .sessaoCardapio .sessaoItem {
+      width: 250px;
+      margin: 10px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #121618;
+      border-radius: 15px;
+      justify-content: end; }
+      main#cardapio .sessaoCardapio .sessaoItem section {
+        background-color: #ff9100;
+        width: 100%;
+        border-radius: 0 0 15px 15px;
+        padding: 8px; }
+        main#cardapio .sessaoCardapio .sessaoItem section h1 {
+          font-size: 20px;
+          font-weight: 800; }
+        main#cardapio .sessaoCardapio .sessaoItem section aside {
+          display: flex;
+          flex-direction: row;
+          gap: 5px;
+          font-weight: 700; }
+
+  main#delivery .deliveryEscolha .sessaoDelivery .sessaoItem img {
+    width: 140px; }
+
+  main#delivery .deliveryEscolha .sessaoDelivery .sessaoItem section h1 {
+    font-size: 24px; } }
+@media screen and (max-width: 360px) {
+  main#paginaInicial .banner .banner-img {
+    width: 100%; }
+  main#paginaInicial .banner .button-group {
+    position: relative;
+    text-align: center;
+    right: -60px;
+    margin-top: -120px; }
+  main#paginaInicial .banner button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 7px;
+    border: none;
+    background-color: #ff9100;
+    color: #000; }
+  main#paginaInicial .info-noticias {
+    width: 100%;
+    height: auto;
+    background-color: #121618;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px; }
+    main#paginaInicial .info-noticias img {
+      display: none; }
+    main#paginaInicial .info-noticias i {
+      font-size: 36px; }
+    main#paginaInicial .info-noticias article {
+      max-width: 320px;
+      text-align: center; }
+      main#paginaInicial .info-noticias article p {
+        max-width: 100%; }
+  main#paginaInicial .sobre-cardapio {
+    margin: 45px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main#paginaInicial .sobre-cardapio .descricao-cardapio {
+      max-width: 320px;
+      text-align: center;
+      margin: 15px 0; }
+    main#paginaInicial .sobre-cardapio .imagens-cardapio {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 15px; }
+    main#paginaInicial .sobre-cardapio button {
+      margin-right: 10px;
+      margin-bottom: 10px;
+      padding: 10px 15px;
+      border-radius: 7px;
+      border: none;
+      background-color: #ff9100;
+      color: #000;
+      font-size: 16px;
+      font-weight: 500; }
+  main#paginaInicial .sobre-delivery {
+    background-color: #121618;
+    padding: 20px;
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main#paginaInicial .sobre-delivery .descricao-delivery {
+      max-width: 320px;
+      text-align: center;
+      margin: 15px 0; }
+    main#paginaInicial .sobre-delivery .sessao-info-delivery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px; }
+      main#paginaInicial .sobre-delivery .sessao-info-delivery .info-delivery {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; }
+        main#paginaInicial .sobre-delivery .sessao-info-delivery .info-delivery .button-delivery {
+          background-color: #ff9100;
+          width: 80px;
+          height: 80px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px; }
+          main#paginaInicial .sobre-delivery .sessao-info-delivery .info-delivery .button-delivery i {
+            font-size: 30px; }
+  main#paginaInicial .sobreNos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0; }
+
+  main#cardapio .ajuda {
+    margin-top: 20px;
+    text-align: center; }
+    main#cardapio .ajuda h1 {
+      font-size: 20px; }
+  main#cardapio .navButtonCardapio {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main#cardapio .navButtonCardapio .btn-cardapio {
+      margin: 10px 0;
+      width: 180px;
+      padding: 8px;
+      border-radius: 5px;
+      border: none;
+      background-color: #121618;
+      color: #fff;
+      font-size: 16px; }
+  main#cardapio .imagemIcon {
+    width: 150px;
+    height: 150px; }
+  main#cardapio .voltarTopo {
+    margin-top: 20px;
+    margin-bottom: -20px; }
+    main#cardapio .voltarTopo a {
+      background-color: #121618;
+      padding: 10px;
+      color: #ff9100; }
+      main#cardapio .voltarTopo a i {
+        font-size: 16px; }
+  main#cardapio .sessaoCardapio {
+    margin-top: 10px;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 20px; }
+    main#cardapio .sessaoCardapio .sessaoItem {
+      width: 250px;
+      margin: 10px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #121618;
+      border-radius: 15px;
+      justify-content: end; }
+      main#cardapio .sessaoCardapio .sessaoItem section {
+        background-color: #ff9100;
+        width: 100%;
+        border-radius: 0 0 15px 15px;
+        padding: 8px; }
+        main#cardapio .sessaoCardapio .sessaoItem section h1 {
+          font-size: 20px;
+          font-weight: 800; }
+        main#cardapio .sessaoCardapio .sessaoItem section aside {
+          display: flex;
+          flex-direction: row;
+          gap: 5px;
+          font-weight: 700; }
+
+  main#delivery .deliveryEscolha .sessaoDelivery .sessaoItem img {
+    width: 120px; }
+
+  main#delivery .deliveryEscolha .sessaoDelivery .sessaoItem section h1 {
+    font-size: 20px; }
+
+  main#delivery .deliveryEscolha .sessaoDelivery .sessaoItem {
+    width: 46%; } }
+@media screen and (max-width: 335px) {
+  main#delivery .deliveryEscolha .buttonsDelivery .btn-delivery {
+    width: 100%; }
+
+  footer p {
+    font-size: 10px; } }
+@media screen and (max-width: 290px) {
+  .info {
+    font-size: 12px; }
+
+  main#paginaInicial .banner .banner-img {
+    width: 100%; }
+  main#paginaInicial .banner .button-group {
+    position: relative;
+    text-align: center;
+    margin-top: 10px; }
+  main#paginaInicial .banner button {
+    margin-right: 5px;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border-radius: 7px;
+    border: none;
+    background-color: #ff9100;
+    color: #000;
+    font-size: 14px; }
+  main#paginaInicial .info-noticias {
+    width: 100%;
+    height: auto;
+    background-color: #121618;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px; }
+    main#paginaInicial .info-noticias img {
+      display: none; }
+    main#paginaInicial .info-noticias i {
+      font-size: 36px; }
+    main#paginaInicial .info-noticias article {
+      width: 100%;
+      text-align: center; }
+      main#paginaInicial .info-noticias article p {
+        max-width: 100%; }
+  main#paginaInicial .sobre-cardapio {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main#paginaInicial .sobre-cardapio .descricao-cardapio {
+      max-width: 260px;
+      text-align: center;
+      margin: 10px 0; }
+      main#paginaInicial .sobre-cardapio .descricao-cardapio h2 {
+        font-weight: 600; }
+      main#paginaInicial .sobre-cardapio .descricao-cardapio p {
+        font-weight: 400;
+        font-size: 16px; }
+    main#paginaInicial .sobre-cardapio .imagens-cardapio {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 10px; }
+    main#paginaInicial .sobre-cardapio button {
+      margin-right: 5px;
+      margin-bottom: 10px;
+      padding: 8px 12px;
+      border-radius: 7px;
+      border: none;
+      background-color: #ff9100;
+      color: #000;
+      font-size: 14px;
+      font-weight: 500; }
+  main#paginaInicial .sobre-delivery {
+    background-color: #121618;
+    padding: 10px;
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main#paginaInicial .sobre-delivery .descricao-delivery {
+      max-width: 260px;
+      text-align: center;
+      margin: 10px 0; }
+    main#paginaInicial .sobre-delivery .sessao-info-delivery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px; }
+      main#paginaInicial .sobre-delivery .sessao-info-delivery .info-delivery {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        main#paginaInicial .sobre-delivery .sessao-info-delivery .info-delivery .button-delivery {
+          background-color: #ff9100;
+          width: 60px;
+          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px; }
+          main#paginaInicial .sobre-delivery .sessao-info-delivery .info-delivery .button-delivery i {
+            font-size: 24px; }
+  main#paginaInicial .sobreNos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0; }
+
+  main#cardapio .ajuda {
+    margin-top: 15px;
+    text-align: center; }
+    main#cardapio .ajuda h1 {
+      font-size: 18px; }
+  main#cardapio .navButtonCardapio {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main#cardapio .navButtonCardapio .btn-cardapio {
+      margin: 10px 0;
+      width: 180px;
+      padding: 8px;
+      border-radius: 5px;
+      border: none;
+      background-color: #121618;
+      color: #fff;
+      font-size: 16px; }
+  main#cardapio .imagemIcon {
+    width: 150px;
+    height: 150px; }
+  main#cardapio .voltarTopo {
+    margin-top: 20px;
+    margin-bottom: -20px; }
+    main#cardapio .voltarTopo a {
+      background-color: #121618;
+      padding: 10px;
+      color: #ff9100; }
+      main#cardapio .voltarTopo a i {
+        font-size: 16px; }
+  main#cardapio .sessaoCardapio {
+    margin-top: 10px;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 20px; }
+    main#cardapio .sessaoCardapio .sessaoItem {
+      width: 250px;
+      margin: 10px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #121618;
+      border-radius: 15px;
+      justify-content: end; }
+      main#cardapio .sessaoCardapio .sessaoItem section {
+        background-color: #ff9100;
+        width: 100%;
+        border-radius: 0 15px 15px 15px;
+        padding: 8px; }
+        main#cardapio .sessaoCardapio .sessaoItem section h1 {
+          font-size: 20px;
+          font-weight: 800; }
+        main#cardapio .sessaoCardapio .sessaoItem section aside {
+          display: flex;
+          flex-direction: row;
+          gap: 5px;
+          font-weight: 700; }
+
+  main#delivery .deliveryEscolha .sessaoDelivery .sessaoItem img {
+    width: 100px; }
+
+  main#delivery .deliveryEscolha .sessaoDelivery .sessaoItem section h1 {
+    font-size: 18px; } }
+@media screen and (max-width: 290px) {
+  main#avaliacoesPage section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; }
+
+  main#avaliacoesPage .infoAvaliacao p {
+    font-size: 18px;
+    max-width: 260px; }
+
+  main#avaliacoesPage .formAvaliacao input[type="text"] {
+    width: 100%;
+    max-width: 260px; }
+
+  main#avaliacoesPage .formAvaliacao input[type="submit"] {
+    width: 100%;
+    max-width: 260px;
+    margin-top: 10px; }
+
+  main#avaliacoesPage .formAvaliacao {
+    padding: 20px; }
+
+  main#avaliacoesPage .formAvaliacao textarea {
+    width: 100%;
+    max-width: 375px;
+    border-radius: 5px;
+    padding: 10px; }
+
+  main#avaliacoesPage .formAvaliacao h2 {
+    text-align: center; } }
+@media screen and (min-width: 291px) and (max-width: 370px) {
+  main#avaliacoesPage section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; }
+
+  main#avaliacoesPage .infoAvaliacao p {
+    font-size: 18px;
+    max-width: 300px; }
+
+  main#avaliacoesPage .formAvaliacao input[type="text"] {
+    width: 100%;
+    max-width: 300px; }
+
+  main#avaliacoesPage .formAvaliacao input[type="submit"] {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px; }
+
+  main#avaliacoesPage .formAvaliacao {
+    padding: 20px; }
+
+  main#avaliacoesPage .formAvaliacao textarea {
+    width: 100%;
+    max-width: 375px;
+    border-radius: 5px;
+    padding: 10px; }
+
+  main#avaliacoesPage .formAvaliacao h2 {
+    text-align: center; } }
+@media screen and (min-width: 291px) and (max-width: 390px) {
+  main#avaliacoesPage section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; }
+
+  main#avaliacoesPage .infoAvaliacao p {
+    font-size: 20px;
+    max-width: 320px; }
+
+  main#avaliacoesPage .formAvaliacao input[type="text"] {
+    width: 100%;
+    max-width: 320px; }
+
+  main#avaliacoesPage .formAvaliacao input[type="submit"] {
+    width: 100%;
+    max-width: 320px;
+    margin-top: 10px; }
+
+  main#avaliacoesPage .formAvaliacao {
+    padding: 20px; }
+
+  main#avaliacoesPage .formAvaliacao textarea {
+    width: 100%;
+    max-width: 375px;
+    border-radius: 5px;
+    padding: 10px; }
+
+  main#avaliacoesPage .formAvaliacao h2 {
+    text-align: center; } }
+@media screen and (min-width: 371px) and (max-width: 450px) {
+  main#avaliacoesPage section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; }
+
+  main#avaliacoesPage .infoAvaliacao p {
+    font-size: 18px;
+    max-width: 350px; }
+
+  main#avaliacoesPage .formAvaliacao input[type="text"] {
+    width: 100%;
+    max-width: 350px; }
+
+  main#avaliacoesPage .formAvaliacao input[type="submit"] {
+    width: 100%;
+    max-width: 350px;
+    margin-top: 10px; }
+
+  main#avaliacoesPage .formAvaliacao {
+    padding: 20px; }
+
+  main#avaliacoesPage .formAvaliacao textarea {
+    width: 100%;
+    max-width: 375px;
+    border-radius: 5px;
+    padding: 10px; }
+
+  main#avaliacoesPage .formAvaliacao h2 {
+    text-align: center; } }
+@media screen and (min-width: 1025px) and (max-width: 1098px) {
+  main#avaliacoesPage section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; }
+
+  main#avaliacoesPage .infoAvaliacao p {
+    font-size: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto; }
+
+  main#avaliacoesPage .formAvaliacao input[type="text"] {
+    width: 320px; }
+
+  main#avaliacoesPage .formAvaliacao input[type="submit"] {
+    width: auto; }
+
+  main#avaliacoesPage .formAvaliacao textarea {
+    width: 100%;
+    max-width: 368px;
+    border-radius: 5px;
+    padding: 10px; }
+
+  main#avaliacoesPage .formAvaliacao h2 {
+    text-align: center; } }
+@media screen and (min-width: 1025px) {
+  main#avaliacoesPage section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; }
+
+  main#avaliacoesPage .infoAvaliacao p {
+    font-size: 24px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto; }
+
+  main#avaliacoesPage .formAvaliacao input[type="text"] {
+    width: 368px; }
+
+  main#avaliacoesPage .formAvaliacao input[type="submit"] {
+    width: auto; }
+
+  main#avaliacoesPage .formAvaliacao textarea {
+    width: 100%;
+    max-width: 368px;
+    border-radius: 5px;
+    padding: 10px; }
+
+  main#avaliacoesPage .formAvaliacao h2 {
+    text-align: center; } }
+@media screen and (max-width: 290px) {
+  main#loginPage {
+    display: flex;
+    justify-content: center; }
+
+  main#loginPage #loginForm {
+    margin: 10px;
+    background-color: #ff9100;
+    width: calc(100% - 20px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px; }
+
+  main#loginPage #loginForm form {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  main#loginPage #loginForm form .erroLogin {
+    color: #121618;
+    font-weight: 700; }
+
+  main#loginPage #loginForm form .inputSubmit {
+    padding: 35px 0px 0px 0px; }
+
+  main#loginPage #loginForm form input[type="email"],
+  main#loginPage #loginForm form input[type="password"],
+  main#loginPage #loginForm form input[type="submit"] {
+    width: calc(100% - 20px);
+    max-width: 250px;
+    height: 30px;
+    padding: 5px;
+    border: none; }
+
+  main#loginPage #loginForm form input[type="submit"] {
+    background-color: #f2f2f2;
+    color: #000; }
+
+  main#loginPage #loginForm form .cadastrarLink {
+    margin-top: 5px; }
+
+  main#loginPage #loginForm form .cadastrarLink a {
+    color: #4267b2;
+    text-decoration: underline; } }
+@media screen and (min-width: 291px) and (max-width: 370px) {
+  main#loginPage #loginForm {
+    width: calc(100% - 30px);
+    max-width: 320px; }
+
+  main#loginPage #loginForm form input[type="email"],
+  main#loginPage #loginForm form input[type="password"],
+  main#loginPage #loginForm form input[type="submit"] {
+    max-width: 280px; } }
+@media screen and (max-width: 390px) {
+  main#loginPage #loginForm {
+    width: calc(100% - 30px);
+    max-width: 350px;
+    height: auto; }
+
+  main#loginPage #loginForm form input[type="email"],
+  main#loginPage #loginForm form input[type="password"] {
+    width: calc(100% - 20px);
+    max-width: 310px;
+    height: 30px;
+    padding: 5px;
+    border: none; }
+
+  main#loginPage #loginForm form input[type="submit"] {
+    max-width: 330px;
+    height: 35px;
+    background-color: #f2f2f2;
+    color: #000;
+    border: none;
+    font-size: 16px; } }
+@media screen and (max-width: 450px) {
+  main#loginPage #loginForm {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    margin-bottom: 100px; }
+
+  main#loginPage #loginForm form {
+    margin: 10px; }
+
+  main#loginPage #loginForm form .inputSubmit {
+    padding: 15px 0px 0px 0px; }
+
+  main#loginPage #loginForm form input[type="email"],
+  main#loginPage #loginForm form input[type="password"] {
+    width: 100%;
+    max-width: none; }
+
+  main#loginPage #loginForm form input[type="submit"] {
+    max-width: none; } }
+@media screen and (max-width: 290px) {
+  main#cadastroPage #loginForm {
+    width: 90%;
+    max-width: none; }
+
+  main#cadastroPage #loginForm form {
+    margin: 10px; }
+
+  main#cadastroPage #loginForm form .inputs {
+    gap: 5px; }
+
+  main#cadastroPage #loginForm form input[type="email"],
+  main#cadastroPage #loginForm form input[type="password"],
+  main#cadastroPage #loginForm input[type="text"] {
+    width: 100%;
+    max-width: none; }
+
+  main#cadastroPage #loginForm form input[type="submit"] {
+    max-width: none;
+    margin-top: 30px; } }
+@media screen and (min-width: 291px) and (max-width: 370px) {
+  main#cadastroPage #loginForm {
+    width: 90%;
+    max-width: none; }
+
+  main#cadastroPage #loginForm form {
+    margin: 10px; }
+
+  main#cadastroPage #loginForm form .inputs {
+    gap: 5px; }
+
+  main#cadastroPage #loginForm form input[type="email"],
+  main#cadastroPage #loginForm form input[type="password"],
+  main#cadastroPage #loginForm input[type="text"] {
+    width: 100%;
+    max-width: none; }
+
+  main#cadastroPage #loginForm form input[type="submit"] {
+    max-width: none;
+    margin-top: 30px; } }
+@media screen and (max-width: 390px) {
+  main#cadastroPage #loginForm {
+    width: 90%;
+    max-width: none; }
+
+  main#cadastroPage #loginForm form {
+    margin: 10px; }
+
+  main#cadastroPage #loginForm form .inputs {
+    gap: 5px; }
+
+  main#cadastroPage #loginForm form input[type="email"],
+  main#cadastroPage #loginForm form input[type="password"],
+  main#cadastroPage #loginForm input[type="text"] {
+    width: 100%;
+    max-width: none; }
+
+  main#cadastroPage #loginForm form input[type="submit"] {
+    max-width: none;
+    margin-top: 30px; } }
+@media screen and (max-width: 450px) {
+  main#cadastroPage #loginForm {
+    width: 90%;
+    max-width: none; }
+
+  main#cadastroPage #loginForm form {
+    margin: 10px; }
+
+  main#cadastroPage #loginForm form .inputs {
+    gap: 5px; }
+
+  main#cadastroPage #loginForm form input[type="email"],
+  main#cadastroPage #loginForm form input[type="password"],
+  main#cadastroPage #loginForm input[type="text"] {
+    width: 100%;
+    max-width: none; }
+
+  main#cadastroPage #loginForm form input[type="submit"] {
+    max-width: none;
+    margin-top: 30px; } }
+
+/*# sourceMappingURL=style.css.map */

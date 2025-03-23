@@ -1,0 +1,172 @@
+<a name="topo"/>
+<main id="delivery" class="localPedido">
+    <section class="deliveryEscolha">
+        <section>
+            <h2>Faça seu pedido</h2>
+        </section>
+        <section class="buttonsDelivery">
+            <button class="btn-delivery" id="btnPizzasDelivery">Pizzas</button>
+            <button class="btn-delivery" id="btnPizzasMeioDelivery">Pizzas Meio a Meio</button>
+            <button class="btn-delivery" id="btnBatatasDelivery">Batatas Recheadas</button>
+            <button class="btn-delivery" id="btnLanchesDelivery">Lanches</button>
+            <button class="btn-delivery" id="btnMassasDelivery">Massas</button>
+            <button class="btn-delivery" id="btnPratosDelivery">Pratos</button>
+            <button class="btn-delivery" id="btnAcrescimosDelivery">Acréscimos</button>
+            <button class="btn-delivery" id="btnBordasDelivery">Bordas</button>
+            <button class="btn-delivery" id="btnBebidasDelivery">Bebidas</button>
+        </section>
+            <section>
+                <section class="sessaoDelivery" id="pizzasContainer">
+            {% for pizzas in pizzas %}
+                <article class="sessaoItem">
+                  <img class="imagemIcon" src="Midias/Imgs/Pizza-icon.png"/>
+                  <section>
+                      <h1>{{ pizzas.nome }}</h1>
+                      <p>{{ pizzas.descricao }}</p>
+                      <aside>
+                          <span><span>{{ pizzas.valorPequeno }}</span> <button class="btn-plus" onclick="adicionarProduto({{pizzas.idPizza}}, '{{pizzas.nome}}', 'Brotinho', '{{pizzas.valorPequeno}}')"><i class="fa-solid fa-plus"></i></button> /</span>
+                          <span><span>{{ pizzas.valorGrande }}</span> <button class="btn-plus" onclick="adicionarProduto({{pizzas.idPizza}}, '{{ pizzas.nome }}', 'Inteira', '{{ pizzas.valorGrande }}')"><i class="fa-solid fa-plus"></i></button></span>
+                      </aside>
+                  </section>
+                </article>
+            {% endfor %}
+            </section>
+            <section class="sessaoDelivery" id="pizzasMeioContainer">
+            {% for pizzas in pizzas %}
+                <article class="sessaoItem">
+                  <img class="imagemIcon" src="Midias/Imgs/Pizza-icon.png"/>
+                  <section>
+                      <h1>{{ pizzas.nome }}</h1>
+                        <p>{{ pizzas.descricao }}</p>
+                      <aside>
+                          <span><span>{{ pizzas.valorGrande }}</span> <button class="btn-plus" onclick="adicionarProduto({{pizzas.idPizza}}, '{{ pizzas.nome }}', 'Inteira', '{{ pizzas.valorGrande }}', 'meia')"><i class="fa-solid fa-plus"></i></button></span>
+                      </aside>
+                  </section>
+                </article>
+            {% endfor %}
+            </section>
+            <section class="sessaoDelivery" id="batatasContainer">
+                {% for batatas in batatas %}
+                    <article class="sessaoItem">
+                      <img class="imagemIcon" src="Midias/Imgs/Batata-icon.png"/>
+                      <section>
+                          <h1>{{ batatas.nome }}</h1>
+                          <aside>
+                              <sapn><span>{{ batatas.valorPequeno }}</span> <button class="btn-plus" onclick="adicionarProduto({{batatas.idBatata}}, '{{ batatas.nome }}', 'Pequena', '{{ batatas.valorPequeno }}')"><i class="fa-solid fa-plus"></i></button>/</sapn>
+                              <span><span>{{ batatas.valorGrande }}</span> <button class="btn-plus" onclick="adicionarProduto({{batatas.idBatata}}, '{{ batatas.nome }}', 'Grande', '{{ batatas.valorGrande }}')"><i class="fa-solid fa-plus"></i></button></span>
+                          </aside>
+                      </section>
+                    </article>
+                {% endfor %}
+            </section>
+            <section class="sessaoDelivery" id="lanchesContainer">
+                {% for lanches in lanches %}
+                    <article class="sessaoItem">
+                    <img class="imagemIcon" src="Midias/Imgs/Lanches-icon.png"/>
+                      <section>
+                          <h1>{{ lanches.nome }}</h1>
+                          <p>{{ lanches.descricao }}</p>
+                          <aside><span><span>{{ lanches.valor }}</span> <button class="btn-plus" onclick="adicionarProduto({{lanches.idLanche}}, '{{ lanches.nome }}', 'valor', '{{ lanches.valor }}')"><i class="fa-solid fa-plus"></i></button></span></aside>
+                      </section>
+                    </article>
+                {% endfor %}
+            </section>
+            <section class="sessaoDelivery" id="massasContainer">
+                {% for massas in massas %}
+                    <article class="sessaoItem">
+                    <img class="imagemIcon" src="Midias/Imgs/Massas-icon.png"/>
+                      <section>
+                          <h1>{{ massas.nome }}</h1>
+                          <aside><span><span>{{ massas.valor }}</span> <button class="btn-plus" onclick="adicionarProduto({{massas.idMassa}}, '{{ massas.nome }}', 'valor', '{{ massas.valor }}')"><i class="fa-solid fa-plus"></i></button></span></aside>
+                      </section>
+                    </article>
+                {% endfor %}
+            </section>
+            <section class="sessaoDelivery" id="pratosContainer">
+                {% for pratos in pratos %}
+                    <article class="sessaoItem">
+                      <img class="imagemIcon" src="Midias/Imgs/Pratos-icon.png"/>
+                      <section>
+                          <h1>{{ pratos.nome }}</h1>
+                          <p>{{pratos.descricao}}</p>
+                          <aside><span><span>{{ pratos.valor }}</span> <button class="btn-plus" onclick="adicionarProduto({{pratos.idPrato}}, '{{ pratos.nome }}', 'valor', '{{ pratos.valor }}')"><i class="fa-solid fa-plus"></i></button></span></aside>
+                      </section>
+                    </article>
+                {% endfor %}
+            </section>
+            <section class="sessaoDelivery" id="acrescimosContainer">
+                {% for acrescimos in acrescimos %}
+                    <article class="sessaoItem">
+                      <img class="imagemIcon" src="Midias/Imgs/Pratos-icon.png"/>
+                      <section>
+                          <h1>{{ acrescimos.nome }}</h1>
+                          <aside><span><span>{{ acrescimos.valor }}</span> <button class="btn-plus" onclick="adicionarProduto({{acrescimos.idAcrescimo}}, '{{ acrescimos.nome }}', 'valor', '{{ acrescimos.valor }}')"><i class="fa-solid fa-plus"></i></button></span></aside>
+                      </section>
+                    </article>
+                {% endfor %}
+            </section>
+            <section class="sessaoDelivery" id="bordasContainer">
+                {% for bordas in bordas %}
+                    <article class="sessaoItem">
+                      <img class="imagemIcon" src="Midias/Imgs/Pratos-icon.png"/>
+                      <section>
+                          <h1>{{ bordas.nome }}</h1>
+                          <aside><span><span>{{ bordas.valor}}</span> <button class="btn-plus" onclick="adicionarProduto({{bordas.idBorda}}, '{{ bordas.nome }}', 'valor', '{{ bordas.valor }}')"><i class="fa-solid fa-plus"></i></button></span></aside>
+                      </section>
+                    </article>
+                {% endfor %}
+            </section>
+            <section class="sessaoDelivery" id="bebidasContainer">
+                {% for bebidas in bebidas %}
+                    <article class="sessaoItem">
+                      <img class="imagemIcon" src="Midias/Imgs/Bebidas-icon.png"/>
+                      <section>
+                          <h1>{{ bebidas.nome }}</h1>
+                          <aside><span><span>{{ bebidas.valor }}</span> <button class="btn-plus" onclick="adicionarProduto({{bebidas.idBebida}}, '{{ bebidas.nome }}', 'valor', '{{ bebidas.valor }}')"><i class="fa-solid fa-plus"></i></button></span></aside>
+                      </section>
+                    </article>
+                {% endfor %}
+            </section>
+        </section>
+    </section>
+    <section class="infoDelivery">
+        <article class="sessaoPedido">
+            <aside>
+                <h2>Pedido</h2>
+            </aside>
+            <aside id="pedido">
+            </aside>
+            <aside id="pedidoMeia">
+            </aside>
+            <aside>
+            <h2 id="totalPedido"></h2>
+            </aside>
+        </article>
+        <article class="sessaoDados">
+            <h2>Dados do cliente</h2>
+            <aside>
+                <label for="nome">Nome:</label><br/>
+                <input type="text" name="nome" id="nome" placeholder="Nome" {% if usuario != null %} value="{{usuario[0].nome}}" {% endif %}>
+            </aside>
+            <aside>
+                <label for="mesa">Mesa:</label><br/>
+                <input type="number" name="mesa" id="mesa" placeholder="Mesa">
+            </aside>
+            <aside>
+                <label for="formaPagamento">Forma de pagamento:</label><br/>
+                <select id="formaPagamento" name="formaPagamento">
+                  <option value="">-- Forma de Pagamento --</option>
+                  <option value="pix">Pix</option>
+                  <option value="credito">Crédito</option>
+                  <option value="debito">Débito</option>
+                </select>
+            </aside>
+            <aside class="submitButton">
+                <input id="submitButtonLocal" type="submit" value="Concluir Pedido"/>
+            </aside>
+        </article>
+    </section>
+</main>
+    <section class="voltarTopo">
+        <a href="#topo"><i class="fa-solid fa-arrow-up"></i></a>
+    </section>

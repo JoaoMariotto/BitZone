@@ -1,0 +1,23 @@
+<main id="loginPage">
+    <section id="loginForm">
+        <h1>Login</h1>
+        <form method="POST" action="/auth">
+            <article>
+                <h3>E-mail:</h3>
+                <input type="email" name="email" placeholder="examplo@gmail.com">
+                <h3>Senha:</h3>
+                <input type="password" name="password" placeholder="SUA SENHA">
+            </article>
+            {% if url == '/login?erroDeLogin' %}
+                <p class="erroLogin">{{ 'E-mail ou senha incorretos' }}</p>
+            {% endif %}
+            <article class="inputSubmit">
+                <input type="submit" value="Entrar">
+            </article>
+            <article class="cadastrarLink">
+                <span>Não tem conta?</span>
+                <a href="/cadastroCliente">Clique aqui</a>
+            </article>
+        </form>
+    </section>
+</main>

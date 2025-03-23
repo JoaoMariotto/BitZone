@@ -1,0 +1,62 @@
+<main id="adm" class="conteudo-print">
+    <section class="navAdm off-print">
+          <ul>
+            <a href="/admMenu">
+                <li>Avaliações</li>
+            </a>
+            <hr>
+            <a href="/admPedidoLocal">
+                <li>Ver Pedidos/Local</li>
+            </a>
+            <hr>
+            <a href="/admPedidoDelivery">
+                <li>Ver Pedidos/Delivery</li>
+            </a>
+            <hr>
+            <a href="/admRegistroGeral">
+                <li>Registro Geral</li>
+            </a>
+          </ul>
+    </section>
+    <section class="conteudo">
+      <article> 
+        <h1>Registro Geral</h1>
+      </article>
+      <article class="button-imprimir-space off-print">
+        <aside>
+          <h3>Imprimir <button class="btn-print off-print" onclick=(imprimir(this))><i class="fa-solid fa-print"></i></button></h3>
+        </aside>
+      </article>
+      <article class="table">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">ID Pedido</th>
+              <th scope="col">Data</th>
+              <th scope="col">Responsável</th>
+              <th scope="col">Forma de Pagamento</th>
+              <th scope="col">Pedido</th>
+              <th scope="col">Local/Entrega</th>
+              <th scope="col">Preço</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for pedidos in pedidoLocal %}
+              <tr class="no-break">
+                {% for item in pedidos %}
+                  <td>{{item}}</td>
+                {% endfor %}
+              </tr>
+            {% endfor %}
+            {% for pedidos in pedidoDelivery %}
+              <tr class="no-break">
+                {% for item in pedidos %}
+                  <td>{{item}}</td>
+                {% endfor %}
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </article>
+    </section>
+</main>

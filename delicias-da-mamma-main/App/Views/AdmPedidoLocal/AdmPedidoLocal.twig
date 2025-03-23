@@ -1,0 +1,52 @@
+<main id="adm" class="conteudo-print">
+    <section class="navAdm off-print">
+          <ul>
+            <a href="/admMenu">
+                <li>Avaliações</li>
+            </a>
+            <hr>
+            <a href="/admPedidoLocal">
+                <li>Ver Pedidos/Local</li>
+            </a>
+            <hr>
+            <a href="/admPedidoDelivery">
+                <li>Ver Pedidos/Delivery</li>
+            </a>
+            <hr>
+            <a href="/admRegistroGeral">
+                <li>Registro Geral</li>
+            </a>
+          </ul>
+    </section>
+    <section class="conteudo">
+      <article> 
+        <h1>Pedidos/Local</h1>
+      </article>
+      <article class="table">
+        <table>
+          <thead class="off-print">
+            <tr>
+              <th scope="col">Data</th>
+              <th scope="col">Mesa</th>
+              <th scope="col">Forma de Pagamaneto</th>
+              <th scope="col">Responsavel</th>
+              <th scope="col">Pedido</th>
+              <th scope="col">Tipo</th>
+              <th scope="col">Preço</th>
+              <th scope="col">Imprimir</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for pedidos in pedidos %}
+              <tr class="off-print">
+                {% for item in pedidos %}
+                  <td>{{item}}</td>
+                {% endfor %}
+                  <td><button class="btn-print off-print" onclick=(imprimir(this))><i class="fa-solid fa-print"></i></button></td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </article>
+    </section>
+</main>
