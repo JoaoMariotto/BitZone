@@ -1,0 +1,184 @@
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 50px 0;
+    position: relative;
+    flex-wrap: wrap;
+    /* Permite o posicionamento absoluto dentro do footer */
+}
+
+.footer-slogan {
+    font-size: 25px;
+    /* Tamanho da fonte */
+    position: absolute;
+    /* Permite posicionar o texto */
+    left: 26%;
+    /* Alinha à esquerda com um pequeno espaço */
+    color: white;
+    overflow: hidden;
+    /* Oculta partes excedentes */
+}
+
+.glitch {
+    position: relative;
+    font-size: 20px;
+    /* Tamanho da fonte */
+    color: white;
+    /* Cor do texto */
+    animation: glitch-anim 1s infinite;
+    /* Animação do glitch */
+}
+
+@keyframes glitch-anim {
+    0% {
+        text-shadow:
+            1px 0 red,
+            -1px 0 blue,
+            1px 1px green,
+            -1px -1px yellow;
+        /* Sombras de texto */
+        transform: translate(0);
+    }
+
+    25% {
+        text-shadow:
+            -1px -1px red,
+            1px 1px blue,
+            -1px 0 green,
+            1px 0 yellow;
+        transform: translate(-2px, -2px);
+    }
+
+    50% {
+        text-shadow:
+            1px 1px red,
+            -1px -1px blue,
+            0px 0 green,
+            -1px 1px yellow;
+        transform: translate(2px, 2px);
+    }
+
+    75% {
+        text-shadow:
+            -1px 1px red,
+            1px -1px blue,
+            0px 0 green,
+            1px 1px yellow;
+        transform: translate(-2px, 2px);
+    }
+
+    100% {
+        text-shadow:
+            1px 0 red,
+            -1px 0 blue,
+            1px 1px green,
+            -1px -1px yellow;
+        transform: translate(0);
+    }
+}
+
+hr {
+    border: 0;
+    /* Remove a borda padrão */
+    height: 1px;
+    /* Define a altura da linha */
+    background-color: #fff;
+    /* Cor da linha */
+    width: 70%;
+    /* Define a largura de 53.5% */
+    margin: 10px auto;
+    /* Centraliza o <hr> */
+}
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+    /* Garante distribuição uniforme */
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+    /* Permite as colunas se ajustarem em telas menores */
+}
+
+.column-footer {
+    flex-grow: 1;
+    /* Garante que todas as colunas cresçam uniformemente */
+    max-width: 25%;
+    /* Limita a largura máxima de cada coluna */
+    text-align: left;
+    /* Mantém o texto alinhado à esquerda */
+    padding: 0 10px;
+    /* Adiciona um pouco de padding para espaçamento */
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a-footer {
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+@media (max-width: 440px) {
+    .footer-slogan {
+        font-size: 12px;
+    }
+
+    .glitch {
+
+        font-size: 9px;
+
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+    li{
+        font-size: 9px;
+    }
+    .copyright{
+        font-size: 9px;
+    }
+}
+@media (max-width: 390px) {
+    .footer-slogan {
+        font-size: 12px;
+    }
+    .container-footer{
+        flex-wrap: wrap;
+    }
+
+    .glitch {
+
+        font-size: 9px;
+
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+    li{
+        font-size: 9px;
+    }
+    .copyright{
+        font-size: 9px;
+    }
+}

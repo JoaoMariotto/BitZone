@@ -1,0 +1,883 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+    }
+
+    .header {
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #111;
+        padding: 10px 20px;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+
+
+
+
+    .logo a {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .logo a:hover {
+        color: #0F4AA7;
+
+    }
+
+
+
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+
+    .menu {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+
+    .menu-item {
+        position: relative;
+        color: white;
+        cursor: pointer;
+        padding: 10px 15px;
+    }
+
+
+
+
+    .menu-item:hover {
+        color: #0F4AA7;
+        font-weight: 600;
+    }
+
+    .a-hist {
+        position: relative;
+        color: white;
+        cursor: pointer;
+        padding: 10px 15px;
+    }
+
+
+
+
+    .a-hist:hover {
+        color: #0F4AA7;
+        font-weight: 600;
+    }
+
+
+
+    .dropdown {
+        position: fixed;
+        top: 67px;
+        /* Ajuste de posicionamento abaixo do header */
+        left: 0;
+        width: 100vw;
+        /* Cobrir toda a largura da tela */
+        background-color: #333;
+        padding: 20px 0;
+        z-index: 999;
+        visibility: visible;
+        opacity: 1;
+    }
+
+
+
+
+    .submenu-container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+
+
+
+    .dropdown a {
+        padding: 10px 20px;
+        color: white;
+        text-decoration: none;
+    }
+
+
+    .text-ft {
+        font-size: 60px;
+        -webkit-text-stroke: 1px;
+        -webkit-text-stroke-color: black;
+    }
+
+    .dropdown a:hover {
+        background-color: #555;
+    }
+
+
+
+
+    .extra-menu {
+        display: flex;
+        gap: 20px;
+    }
+
+
+
+
+    .extra-menu a {
+        color: white;
+        text-decoration: none;
+    }
+
+
+
+
+
+    .extra-menu a:hover {
+        color: #0F4AA7;
+        border-color: #0F4AA7;
+    }
+
+
+
+
+    .banner {
+        display: block;
+        max-width: 100%;
+        margin-top: 60px;
+        height: auto;
+        background-color: var(--img-color);
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+        background-color: #0F4AA7;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .inicio {
+        background-color: black;
+    }
+
+    input[type="radio"] {
+        position: absolute;
+        bottom: 0;
+        left: -9999px;
+    }
+
+    .linhaP {
+        text-align: center;
+        font-size: 30px;
+        color: white;
+    }
+
+    .produto {
+        display: flex;
+        flex-direction: row;
+        gap: 22px;
+        justify-content: center;
+        width: 97%;
+    }
+
+    .nome {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .gtx {
+        position: relative;
+        width: 100%;
+    }
+
+    .rtx {
+        width: 100%;
+        height: 800px;
+    }
+
+    .texto-gtx {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+    }
+
+    .ftproduto {
+        transition: transform 0.3s ease;
+        /* Suaviza a transformação */
+    }
+
+    .btn-produto:hover .ftproduto {
+
+        transform: scale(1.1);
+        /* Aumenta a imagem em 10% */
+    }
+
+    .border-container {
+        position: relative;
+        align-items: center;
+        display: inline-block;
+        /* Para ajustar o tamanho ao conteúdo */
+        width: 100%;
+        /* Ou a largura desejada */
+    }
+
+    .btn {
+        color: var(--white);
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 45px;
+        max-width: 160px;
+        position: relative;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+    }
+
+
+
+
+    .btn-1 {
+
+        font-weight: 900;
+        position: relative;
+
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 45px;
+        }
+
+        rect {
+            fill: none;
+            
+            stroke: var(--white);
+            stroke-width: 2;
+            stroke-dasharray: 422, 0;
+            transition: all 0.35s linear;
+        }
+    }
+
+
+    :root {
+
+        --white: #fff;
+    }
+
+
+    /* Efeito hover */
+
+    .btn-1:hover {
+        background: rgba(255, 255, 255, 0);
+        font-weight: 900;
+        letter-spacing: 1px;
+
+        rect {
+            stroke-width: 5;
+            stroke-dasharray: 15, 310;
+            stroke-dashoffset: 48;
+            transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+    }
+
+
+    .btn-1-produto {
+        display: flex;
+        flex-direction: column;
+        /* Para empilhar a imagem e o texto */
+        align-items: center;
+        /* Centraliza o texto abaixo da imagem */
+        position: relative;
+        /* Necessário para a borda */
+
+    }
+
+
+
+
+    .btn-produto {
+        color: var(--white);
+        cursor: pointer;
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 45px;
+        max-width: 460px;
+        position: relative;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+    }
+
+
+
+
+    .btn-1-produto {
+        display: flex;
+        flex-direction: column;
+        /* Para empilhar a imagem e o texto */
+        align-items: center;
+        /* Centraliza o texto abaixo da imagem */
+
+        svg {
+            position: absolute;
+            top: 89%;
+
+            width: 400px;
+            height: 15%;
+            z-index: 1;
+            /* Para que a borda fique atrás da imagem */
+        }
+
+        rect {
+            fill: none;
+            stroke: var(--white);
+            width: 100%;
+            stroke-width: 2;
+            stroke-dasharray: 422, 0;
+            transition: all 0.35s linear;
+        }
+    }
+
+
+    :root {
+
+        --white: #fff;
+    }
+
+
+    /* Efeito hover */
+
+    .btn-1-produto:hover {
+        background: rgba(255, 255, 255, 0);
+        letter-spacing: 1px;
+
+        rect {
+            stroke-width: 5;
+            stroke-dasharray: 15, 310;
+            stroke-dashoffset: 48;
+            transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+    }
+
+    .btn-produto:hover .ftproduto {
+        transform: scale(1.1);
+    }
+
+
+    /* SLIDESHOW
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .carousel {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        /* Esconde a parte das imagens fora do contêiner */
+    }
+
+    .featured-wrapper {
+        position: relative;
+    }
+
+    .featured-list {
+        display: grid;
+    }
+
+    .featured-list li {
+        position: relative;
+        /* Necessário para que o temporizador fique dentro do contêiner da imagem */
+        grid-column: 1;
+        grid-row: 1;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .featured-list li img {
+        width: 100%;
+        /* Ajusta a largura da imagem */
+    }
+
+    .timer {
+        position: absolute;
+        bottom: 70px;
+        /* Posiciona no canto inferior */
+        right: 50px;
+        /* Posiciona no canto direito */
+        width: 2px;
+        /* Largura estreita para fazer o temporizador ficar em pé */
+        height: 35px;
+        /* Altura inicial do temporizador */
+        background-color: #0F4AA7;
+        /* Cor do temporizador */
+        transition: height 1s linear;
+        /* Suaviza a transição da altura */
+        z-index: 10;
+        /* Certifica-se de que está acima da imagem */
+    }
+
+    .timer2 {
+        position: absolute;
+        bottom: 70px;
+        /* Posiciona no canto inferior */
+        right: 50px;
+        /* Posiciona no canto direito */
+        width: 2px;
+        /* Largura estreita para fazer o temporizador ficar em pé */
+        height: 35px;
+        /* Altura inicial do temporizador */
+        background-color: #ffffff;
+        /* Cor do temporizador */
+        transition: height 1s linear;
+        /* Suaviza a transição da altura */
+        z-index: 10;
+        /* Certifica-se de que está acima da imagem */
+    }
+
+    .dots {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 10px;
+        left: 90%;
+        transform: translateX(-50%);
+    }
+
+    .dots li {
+        margin-right: 8px;
+        /* espaço entre os traços */
+    }
+
+    .dots label {
+        display: inline-block;
+        width: 20px;
+        height: 8px;
+        background-color: white;
+        /* Cor padrão */
+        cursor: pointer;
+        /* Mostra que é clicável */
+        transform: skew(-20deg);
+        /* Inclinação para criar o efeito de paralelepípedo */
+        transition: all 0.3s;
+        /* Suavização para animação */
+    }
+
+    .dots label:hover {
+        background: #0F4AA7;
+        /* Cor ao passar o mouse */
+    }
+
+    .dots label.selected {
+        background-color: #0F4AA7;
+        /* Cor ao ser selecionado */
+        width: 120px;
+        /* Largura maior quando selecionado */
+    }
+
+    .thumb-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        margin-top: 20px;
+    }
+
+    .thumb-list label {
+        display: grid;
+    }
+
+    .thumb-list img,
+    .thumb-list .outer {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .thumb-list .outer {
+        display: grid;
+        place-items: center;
+        transition: background 0.25s;
+    }
+
+    .thumb-list .inner {
+        font-size: 18px;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.25s;
+    }
+
+
+
+
+    /* Ajustes para telas menores (abaixo de 720px) */
+
+
+
+    /* Ajuste para tablets */
+
+
+    @media (max-width: 390px) {
+        .header {
+            position: fixed;
+            width: 200px;
+            z-index: 1000;
+            display: flex;
+            align-items: start;
+            background-color: #111;
+
+
+        }
+        
+
+            .btn-1-produto {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            .btn-1-produto svg {
+                top: 87%;
+                left: 13%;
+                width: 285px;
+                height: 15%;
+                z-index: 1;
+            }
+
+
+    }
+
+    .header {
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #111;
+        padding: 10px 20px;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Ícone do menu mobile (hambúrguer) */
+    .mobile-menu-icon {
+        display: none;
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+    }
+
+    /* Menu desktop */
+    .navbar {
+        display: flex;
+    }
+
+    /* Ajustes do Menu */
+    .menu {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+    }
+
+    /* Menu item */
+    .menu-item {
+        position: relative;
+        padding: 10px 15px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .menu-item:hover {
+        color: #0F4AA7;
+        font-weight: 600;
+    }
+
+    /* Extra Menu */
+    .extra-menu {
+        display: flex;
+        gap: 20px;
+    }
+    /* Responsividade */
+    @media (max-width: 800px) {
+        .navbar {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            background-color: #111;
+            width: 100%; /* Garante que não ultrapasse a largura da tela */
+            position: absolute;
+            top: 60px;
+            left: 0;
+            overflow: hidden; /* Evita que conteúdo extra transborde */
+        }
+
+        .header {
+ 
+            width: 100vw; /* Garante que ocupe exatamente a largura da tela */
+            max-width: 100%; /* Evita que o header ultrapasse */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 20px; /* Reduz padding lateral */
+            box-sizing: border-box; /* Inclui padding na largura total */
+            gap: 10px;
+        }
+
+        .dropdown {
+            font-size: 10px;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            max-width: 100%; /* Evita que o dropdown ultrapasse a tela */
+            background-color: #333;
+            padding: 10px 0;
+            z-index: 999;
+        }
+
+        .submenu-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Aproxima um pouco mais os itens */
+        
+        }
+
+        .menu-item {
+            padding: 5px 10px;
+            text-align: center;
+            word-wrap: break-word; /* Garante que o texto não ultrapasse a largura */
+        }
+
+        .navbar.open {
+            display: flex;
+        }
+
+        .mobile-menu-icon {
+            display: block;
+        }
+
+        .menu {
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .extra-menu {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            flex-direction: row;
+            align-items: flex-end;
+        }
+        .carousel-item {
+            width: 250px;
+            height: 150px;
+        }
+
+
+        .ftproduto {
+            width: 320px;
+            transition: transform 0.3s ease;
+            /* Suaviza a transformação */
+        }
+        
+        .btn-produto:hover .ftproduto {
+        
+            transform: scale(1.1);
+            /* Aumenta a imagem em 10% */
+        }
+        
+
+        .dots label {
+            display: inline-block;
+            width: 10px;
+            height: 3px;
+            background-color: white;
+            /* Cor padrão */
+            cursor: pointer;
+            /* Mostra que é clicável */
+            transform: skew(-20deg);
+            /* Inclinação para criar o efeito de paralelepípedo */
+            transition: all 0.3s;
+            /* Suavização para animação */
+        }
+
+        .dots li {
+            margin-right: 3px;
+            /* espaço entre os traços */
+        }
+
+        .dots label.selected {
+            background-color: #0F4AA7;
+            /* Cor ao ser selecionado */
+            width: 30px;
+            /* Largura maior quando selecionado */
+        }
+
+        .timer {
+            position: absolute;
+            bottom: 25px;
+            /* Posiciona no canto inferior */
+            right: 25px;
+            /* Posiciona no canto direito */
+            width: 2px;
+            /* Largura estreita para fazer o temporizador ficar em pé */
+            height: 20px;
+            /* Altura inicial do temporizador */
+            background-color: #0F4AA7;
+            /* Cor do temporizador */
+            transition: height 1s linear;
+            /* Suaviza a transição da altura */
+            z-index: 10;
+            /* Certifica-se de que está acima da imagem */
+        }
+
+        .timer2 {
+            position: absolute;
+            bottom: 25px;
+            /* Posiciona no canto inferior */
+            right: 25px;
+            /* Posiciona no canto direito */
+            width: 2px;
+            /* Largura estreita para fazer o temporizador ficar em pé */
+            height: 20px;
+            /* Altura inicial do temporizador */
+            background-color: #ffffff;
+            /* Cor do temporizador */
+            transition: height 1s linear;
+            /* Suaviza a transição da altura */
+            z-index: 10;
+            /* Certifica-se de que está acima da imagem */
+        }
+
+        .container-footer {
+            display: flex;
+            justify-content: center;
+            /* Garante distribuição uniforme */
+            max-width: 1200px;
+            margin: auto;
+            flex-wrap: wrap;
+            gap: 30px;
+            /* Permite as colunas se ajustarem em telas menores */
+        }
+
+        .column-footer {
+            flex-grow: 1;
+            /* Garante que todas as colunas cresçam uniformemente */
+            max-width: 25%;
+            /* Limita a largura máxima de cada coluna */
+            text-align: left;
+            /* Mantém o texto alinhado à esquerda */
+            padding: 0 10px;
+            /* Adiciona um pouco de padding para espaçamento */
+        }
+
+        .text-ft {
+            font-size: 30px;
+        }
+        .btn-1-produto {
+            display: flex;
+            flex-direction: column;
+            /* Para empilhar a imagem e o texto */
+            align-items: center;
+            /* Centraliza o texto abaixo da imagem */
+        
+            svg {
+
+                top: 87%;
+                left: 4%;
+                width: 290px;
+                height: 15%;
+                z-index: 1;
+                /* Para que a borda fique atrás da imagem */
+            }}
+
+        .btn {
+            color: var(--white);
+            cursor: pointer;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 45px;
+            max-width: 160px;
+            position: relative;
+            text-transform: uppercase;
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+        }
+        .header {
+            padding: 10px 20px;
+
+        }
+        .border-container{
+            margin-bottom: 50px;
+        }
+
+        .menu {
+            gap: 10px;
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+            width: 400px;
+        }
+
+
+
+        .text-home{
+            font-size: large;
+        }
+        .produto {
+            flex-direction: column;
+            /* Troca para coluna em telas menores */
+            align-items: center;
+        }
+
+        .extra-menu {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+
+        .rtx {
+            height: 250px;
+            /* Ajusta a altura da imagem em telas menores */
+        }
+    }

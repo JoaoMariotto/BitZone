@@ -1,0 +1,267 @@
+.cartao{
+    background-color: #232323;
+    width: 430px;
+    height: 535px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.linhaCartao{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+}
+.product-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .product-image-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  .product-details {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .product-title {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-shipping {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 40px;
+    color: green;
+    margin-bottom: 10px;
+  }
+  
+  .product-price {
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-discount {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .product-payment {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .product-related {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .product-related-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-related-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .product-related-image {
+    width: 30%;
+    height: 100px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+
+
+
+  .ft-cartao {
+    transition: transform 0.3s ease; /* Suaviza a transformação */
+    transform: scale(1); /* Tamanho normal */
+    color: white;
+    width: 400px;
+
+
+}
+
+.ft-cartao:hover {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+}
+
+.h1-cartao{
+  font-size: 35px;
+}
+
+  .button-55,
+.button-55:after {
+  cursor: pointer;
+  width: 150px;
+  height: 76px;
+  line-height: 78px;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #0F4AA7 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-55:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'ALTERNATE TEXT';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #0F4AA7 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+.button-55:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .button-55,
+  .button-55:after {
+    width: 220;
+    height: 60px;
+    line-height: 50px;
+  }
+}   
+@media (max-width: 800px) {
+  .linhaCartao{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+    align-items: center;
+  }
+
+
+    .cartao{
+      background-color: #232323;
+      width: 330px;
+      height: 535px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+}
+
+@media (max-width: 420px) {
+  .h1-cartao{
+    font-size: 10px;
+  }
+}@media (max-width: 768px) {
+  .h1-cartao{
+    font-size: 15px;
+  }
+}
+
+
